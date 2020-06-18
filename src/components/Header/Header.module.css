@@ -1,0 +1,13 @@
+.header{
+    grid-area: h;
+    background: linear-gradient(to right,  #f0e8e8, #eddddd );
+    color: #352a2a;
+    text-decoration: none;
+    font-size: 50px;
+    display: flex;
+}
+
+.logo{
+    margin: 5px 20px 5px 20px;
+
+}

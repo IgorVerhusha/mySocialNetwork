@@ -1,0 +1,14 @@
+.nav{
+    grid-area: n;
+    /*background-color: ;*/
+    background: linear-gradient(to right,  #f9f3c5, #ebe196);
+    padding: 20px;
+}
+.item a{
+    color: #352a2a;
+    text-decoration: none;
+}
+.item .active{
+    color: #de1b1b;
+}
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1coxmH9ekiUlCDnr41AepUKW6W8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Dialogs" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Dialogs\Message" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Dialogs\DialogItem" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Profile\ProfileInfo" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Settings" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Profile" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Profile\MyPosts" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Nav" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Header" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="" />
+      <created>1591208904248</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591208904248</updated>
+      <workItem from="1591208908684" duration="9506000" />
+      <workItem from="1591441649883" duration="206000" />
+      <workItem from="1591441878369" duration="108000" />
+      <workItem from="1591442019866" duration="289000" />
+      <workItem from="1591442329471" duration="139000" />
+      <workItem from="1591442490231" duration="163000" />
+      <workItem from="1591442713208" duration="10254000" />
+      <workItem from="1591533719913" duration="141000" />
+      <workItem from="1591533923080" duration="1848000" />
+      <workItem from="1591634556884" duration="60000" />
+      <workItem from="1591637935655" duration="2682000" />
+      <workItem from="1591642236740" duration="4464000" />
+      <workItem from="1591718653103" duration="7682000" />
+      <workItem from="1591733899304" duration="207000" />
+      <workItem from="1591734121414" duration="1672000" />
+      <workItem from="1591783218663" duration="2109000" />
+      <workItem from="1591809667256" duration="4022000" />
+      <workItem from="1591902579145" duration="6330000" />
+      <workItem from="1592055319806" duration="9832000" />
+      <workItem from="1592123714052" duration="15512000" />
+      <workItem from="1592237635628" duration="4459000" />
+      <workItem from="1592338324123" duration="482000" />
+      <workItem from="1592409239036" duration="12904000" />
+      <workItem from="1592498508919" duration="3391000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="189" y="257" width="888" height="331" key="#File_Watchers" timestamp="1591442426560">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="189" y="257" width="888" height="331" key="#File_Watchers/0.0.1536.824@0.0.1536.824" timestamp="1591442426560" />
+    <state x="654" y="275" key="#Notifications" timestamp="1591441840293">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="654" y="275" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1591441840293" />
+    <state x="447" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591439575283">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591439575283" />
+    <state x="472" y="191" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1591443198572">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="472" y="191" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1591443198572" />
+    <state x="551" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592413295924">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="551" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592413295924" />
+    <state x="147" y="65" key="DiffContextDialog" timestamp="1591734010572">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1591734010572" />
+    <state x="361" y="147" width="660" height="677" key="EditFileWatcherDialog" timestamp="1591443209990">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="147" width="660" height="677" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1591443209990" />
+    <state x="472" y="241" key="FileChooserDialogImpl" timestamp="1591634604036">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="472" y="241" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591634604036" />
+    <state x="499" y="115" key="RollbackChangesDialog" timestamp="1591734052418">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1591734052418" />
+    <state x="201" y="115" key="SettingsEditor" timestamp="1591443217680">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="201" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591443217680" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591734034894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1591734034894" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1591734060442">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591734060442" />
+    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592412193718">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592412193718" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="react-first-project" type="b2602c69:ProjectViewProjectNode" />
+        <item name="react-first-project" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+</project>

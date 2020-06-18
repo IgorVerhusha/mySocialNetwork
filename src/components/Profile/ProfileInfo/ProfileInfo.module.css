@@ -1,0 +1,16 @@
+
+.content{
+    grid-area: c;
+    background-color: #352a2a;
+    height: 500px;
+}
+
+.content img{
+    width: 100%;
+    height: 300px;
+}
+
+.item {
+    color: #f0e8e8;
+    padding: 20px;
+}
