@@ -1,0 +1,20 @@
+.friendList {
+  margin-top: 40%;
+  display: grid;
+}
+.friendList .friendHeader {
+  font-size: 25px;
+  text-align: center;
+}
+.friendList .friendItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.friendList .friendItems .friendItem {
+  margin-top: 20%;
+}
+.friendList .friendItems .friendItem img {
+  height: 50px;
+}
+
+/*# sourceMappingURL=Friends.module.css.map */

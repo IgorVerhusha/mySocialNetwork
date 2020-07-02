@@ -4,17 +4,37 @@
     color: #f0e8e8;
 }
 .dialogItems{
-    padding: 20px;
+    padding: 40px;
 }
 
+.dialogItems img {
+    width: 50px;
+}
 .messageItems{
     padding: 20px;
 }
 .dialog a{
     color: #f0e8e8;
     text-decoration: none;
+    margin-bottom: 100px;
+}
+.dialog{
+    margin-bottom: 10px;
 }
 
 .dialog .active{
     color: #87AAB9;
+}
+
+.message{
+    padding: 2%;
+    margin-bottom: 10px;
+    width: 40%;
+    background: #074661;
+}
+
+.inputTextMessage{
+    margin-top: 20%;
+    width: 60%;
+    height: 20%;
 }

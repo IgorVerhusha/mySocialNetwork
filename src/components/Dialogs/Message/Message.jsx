@@ -1,13 +1,16 @@
 import React from "react";
-import classes from './../Dialogs.module.css';
+import classes from "./../Dialogs.module.css"
 
 
 
 const Message = (props) => {
+
     return (
-        <div>
+
+        <div style={props.style} className={classes.message}>
             {props.messageText}
         </div>
+
     )
 }
 

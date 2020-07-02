@@ -1,0 +1,26 @@
+.friendList {
+  margin-top: 40%;
+  display: grid;
+
+  .friendHeader {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .friendItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .friendItem {
+      margin-top: 20%;
+
+      img {
+        height: 50px;
+      }
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,27 @@
+.card {
+    color: #f0e8e8;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+    "p" "d";
+    border: #f0e8e8 1px solid;
+    margin: 2% 30% 0% 5%;
+    background-color: #4a3f3f;
+    .picture {
+      margin: 7%;
+      grid-area: p;
+      img {
+        height: 80px;
+      }
+      button {
+        background-color: #eddddd;
+        border: none;
+        width: 80px;
+      }
+    }
+    .discription {
+      grid-area: d;
+      text-align: center;
+      padding-top: 4%;
+    }
+}
