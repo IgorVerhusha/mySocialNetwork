@@ -1,73 +1,14 @@
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
-const SET_USERS = 'SET-USERS'
-
-
-// props.setUsers([
-//     {
-//         id: 1,
-//         followed: true,
-//         fullName: 'Igor',
-//         status: 'in education process',
-//         location: {city: 'Minsk', country: 'Belarus'},
-//         avatar: 'https://cs16planet.ru/steam-avatars/images/avatar2700.jpg'
-//     },
-//     {
-//         id: 2,
-//         followed: true,
-//         fullName: 'Nikita',
-//         status: 'repair conditioners',
-//         location: {city: 'Smolevichi', country: 'Belarus'},
-//         avatar: 'https://cs16planet.ru/steam-avatars/images/avatar2506.jpg'
-//     },
-//     {
-//         id: 3,
-//         followed: false,
-//         fullName: 'Anton',
-//         status: 'arrest cars',
-//         location: {city: 'Minsk', country: 'Belarus'},
-//         avatar: 'https://cs16planet.ru/steam-avatars/images/avatar3317.jpg'
-//     },
-//     {
-//         id: 4,
-//         followed: true,
-//         fullName: 'Andrey',
-//         status: 'repair PC',
-//         location: {city: 'Dubrovno', country: 'Belarus'},
-//         avatar: 'https://cs16planet.ru/steam-avatars/images/avatar2672.jpg'
-//     },
-//     {
-//         id: 5,
-//         followed: false,
-//         fullName: 'Yuli',
-//         status: 'doing nothing',
-//         location: {city: 'Minsk', country: 'Belarus'},
-//         avatar: 'https://cs16planet.ru/steam-avatars/images/avatar3171.jpg'
-//     },
-//     {
-//         id: 6,
-//         followed: true,
-//         fullName: 'Vlad',
-//         status: 'lend money',
-//         location: {city: 'Dubrovno', country: 'Belarus'},
-//         avatar: 'https://cs16planet.ru/steam-avatars/images/avatar2812.jpg'
-//     },
-//     {
-//         id: 7,
-//         followed: true,
-//         fullName: 'Zhenya',
-//         status: 'working',
-//         location: {city: 'Lida', country: 'Belarus'},
-//         avatar: 'https://cs16planet.ru/steam-avatars/images/avatar3268.jpg'
-//     }
-// ])
-
-
-
+const SET_USERS = 'SET-USERS';
+const SET_CURRENT_PAGE = 'SET-CURRENT-PAGE';
+const SET_TOTAL_USERS_COUNT ='SET-TOTAL-USERS-COUNT'
 
 let initialState = {
-        users: []
-
+        users: [],
+        pageSize: 100,
+        totalUsersCount: 0,
+        currentPage: 2
 };
 
 const usersReducer = (state = initialState, action) => {
@@ -95,10 +36,21 @@ const usersReducer = (state = initialState, action) => {
         case SET_USERS:
             return {
                 ...state,
-                users: [...state.users, ...action.users]
+                users: action.users
             }
+        case SET_CURRENT_PAGE:
+            return {
+                ...state,
+                currentPage: action.currentPage
+            }
+        case SET_TOTAL_USERS_COUNT:
+            return {
+                ...state,
+                totalUsersCount: action.totalCount
+            }
+
+
         default: return state;
-
     }
 
 
@@ -106,22 +58,12 @@ const usersReducer = (state = initialState, action) => {
 
 }
 
-export let followAC = (userId) => {
-    return {
-        type: FOLLOW, userId
-    }
-}
 
-export let unfollowAC = (userId) => {
-    return {
-        type: UNFOLLOW, userId
-    }
-}
 
-export let setUsersAC = (users) => {
-    return {
-        type: SET_USERS, users
-    }
-}
+export let followAC = (userId) => ({type: FOLLOW, userId})
+export let unfollowAC = (userId) => ({type: UNFOLLOW, userId})
+export let setUsersAC = (users) => ({type: SET_USERS, users})
+export let setCurrentPageAC = (pageNumber) => ({type: SET_CURRENT_PAGE, currentPage: pageNumber})
+export let setTotalUsersCountAC = (totalCount) => ({type: SET_TOTAL_USERS_COUNT, totalCount: totalCount})
 
 export default usersReducer;
