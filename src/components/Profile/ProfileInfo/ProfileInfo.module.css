@@ -13,4 +13,10 @@
 .item {
     color: #f0e8e8;
     padding: 20px;
+
+}
+
+.item img {
+    height: 200px;
+    width: 200px;
 }

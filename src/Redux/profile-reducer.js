@@ -1,5 +1,6 @@
 const ADD_POST = 'ADD-POST';
 const CHANGE_NEW_POST_TEXT = 'CHANGE-NEW-POST-TEXT';
+const SET_USER_PROFILE = 'SET_USER_PROFILE'
 
 let initialState = {
     // массив с информацией о постах
@@ -9,7 +10,8 @@ let initialState = {
         {id: 3, post: 'it\'s very nice', likesCount: 5}
     ],
     //набранный в текстареа текст
-    newPostText: ''
+    newPostText: '',
+    profile: null
 };
 
 const profileReducer = (state = initialState, action) => {
@@ -25,24 +27,21 @@ const profileReducer = (state = initialState, action) => {
                 ...state,
                 newPostText: action.text
             };
+        case SET_USER_PROFILE:
+            return {
+                ...state, profile: action.profile
+            }
         default:
             return state;
 
     }
 }
 
-export let addPostActionCreator = () => {
-    return {
-        type: ADD_POST
-    }
-}
+export const addPostActionCreator = () => ({ type: ADD_POST })
+export const changeNewPostTextActionCreator = (text) => ({ type: CHANGE_NEW_POST_TEXT, text: text })
+export const setUserProfile = (profile) => ({ type: SET_USER_PROFILE, profile})
 
-export let changeNewPostTextActionCreator = (text) => {
-    return {
-        type: CHANGE_NEW_POST_TEXT,
-        text: text
-    }
-}
+
 
 
 export default profileReducer;

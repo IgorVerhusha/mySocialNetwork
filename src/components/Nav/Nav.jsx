@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Nav.module.css';
 import {NavLink} from "react-router-dom";
-import Friends from "./Friends/Friends";
+
 
 
 
@@ -30,6 +30,7 @@ const Nav = (props) => {
        <div className={classes.friendsMenu}>
                 {/*<Friends usersPage={props.usersPage}/>*/}
        </div>
+
     </nav>
 }
 

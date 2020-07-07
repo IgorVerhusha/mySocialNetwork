@@ -8,7 +8,7 @@ import MyPostsContainer from "./MyPosts/MyPostsContainer";
 // отрисовываем страницу профиля
 const Profile = (props) => {
     return <div className={classes.content}>
-        <ProfileInfo/>
+        <ProfileInfo profile={props.profile}/>
         <MyPostsContainer/>
     </div>
 }

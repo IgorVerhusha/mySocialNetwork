@@ -1,3 +1,5 @@
+
+
 .header{
     grid-area: h;
     background: linear-gradient(to right,  #f0e8e8, #eddddd );
@@ -5,9 +7,20 @@
     text-decoration: none;
     font-size: 50px;
     display: flex;
+    padding-bottom: 30px;
 }
 
-.logo{
-    margin: 5px 20px 5px 20px;
+.logo img{
 
+    padding: 0px 10px 20px 10px;
+}
+
+.loginBlock {
+
+    float: right;
+    margin-left: 60%;
+}
+
+svg{
+    color: #352a2a;
 }

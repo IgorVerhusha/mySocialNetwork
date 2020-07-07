@@ -10,25 +10,25 @@ import {BrowserRouter, Route} from "react-router-dom";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 import Friends from "./components/Nav/Friends/Friends";
+import ProfileContainer from "./components/Profile/ProfileContainer";
+import HeaderContainer from "./components/Header/HeaderContainer";
 
 
 
 const App = (props) => {
-
     return (
         <BrowserRouter>
             <div className={"app-wrapper"}>
-                <Header/>
-                <Nav />
+                <HeaderContainer/>
+                <Nav/>
                 <div className={"app-wrapper-content"}>
                     <Route exact path='/' render={() => <Profile/> }/>
-                    <Route path="/profile" render={() => <Profile/> }/>
+                    <Route path="/profile/:userId?" render={() => <ProfileContainer/> }/>
                     <Route path="/dialogs" render={() => <DialogsContainer/> }/>
                     <Route path="/news" component={News}/>
                     <Route path="/music" component={Music}/>
                     <Route path="/users" render={()=> <UsersContainer/> }/>
                     <Route path="/settings" component={Settings}/>
-
                 </div>
             </div>
         </BrowserRouter>

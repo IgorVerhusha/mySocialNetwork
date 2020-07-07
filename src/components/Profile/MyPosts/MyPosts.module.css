@@ -2,5 +2,8 @@
 .item {
     color: #f0e8e8;
     padding: 0px 20px;
+}
 
+.textInput {
+    width: 400px;
 }

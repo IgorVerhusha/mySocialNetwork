@@ -31,11 +31,11 @@ const MyPosts = (props) => {
     // блок с постами
     return <div className={classes.item}>
         <h3>My posts</h3>
-        <div>
-            <textarea ref={newPostElement} value={props.profilePage.newPostText} onChange={onPostChange}></textarea>
+        <div className={classes.textInput}>
+            <textarea className="form-control"   aria-label="With textarea" ref={newPostElement} value={props.profilePage.newPostText} onChange={onPostChange}></textarea>
         </div>
         <div>
-            <button onClick={onAddPost}>add post</button>
+            <button type="button" className="btn btn-info" onClick={onAddPost}>add post</button>
         </div>
         <div>
             New posts
