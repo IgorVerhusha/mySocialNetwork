@@ -1,6 +1,6 @@
 .app-wrapper{
   display: grid;
-  grid-template-rows: 70px 1fr;
+  grid-template-rows: 90px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-gap: 3px;
   grid-template-areas:
@@ -15,7 +15,7 @@
 @media screen and (max-width: 992px) {
   .app-wrapper {
     display: grid;
-    grid-template-rows: 70px 1fr;
+    grid-template-rows: 90px 1fr;
     grid-template-columns: 2fr 6fr;
     grid-gap: 3px;
     grid-template-areas:
@@ -28,7 +28,7 @@
 @media screen and (min-width:993px) and (max-width: 1200px) {
   .app-wrapper {
     display: grid;
-    grid-template-rows: 70px 1fr;
+    grid-template-rows: 90px 1fr;
     grid-template-columns: 2fr 6fr;
     grid-gap: 3px;
     grid-template-areas:

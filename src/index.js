@@ -7,6 +7,7 @@ import App from "./App";
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ProfileContainer from "./components/Profile/ProfileContainer";
 
 
     ReactDOM.render(
@@ -17,7 +18,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
         </BrowserRouter>,
         document.getElementById('root')
     );
-
 
 
 // If you want your app to work offline and load faster, you can change

@@ -1,44 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 53">
-      <change afterPath="$PROJECT_DIR$/src/Redux/auth-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Preloader.js" afterDir="false" />
+    <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 60">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/users-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/auth-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
@@ -51,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -162,7 +140,11 @@
       <workItem from="1593952400262" duration="2272000" />
       <workItem from="1593954686546" duration="13235000" />
       <workItem from="1594050736380" duration="14170000" />
-      <workItem from="1594136621627" duration="11920000" />
+      <workItem from="1594136621627" duration="12664000" />
+      <workItem from="1594156915805" duration="1045000" />
+      <workItem from="1594202825337" duration="5055000" />
+      <workItem from="1594208783290" duration="3221000" />
+      <workItem from="1594222402758" duration="18050000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 53">
       <created>1593707361807</created>
@@ -178,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593947734002</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lesson 60">
+      <created>1594155068777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594155068777</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +178,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -199,7 +194,8 @@
   <component name="VcsManagerConfiguration">
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
     <MESSAGE value="lesson 53" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 53" />
+    <MESSAGE value="lesson 60" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 60" />
   </component>
   <component name="WindowStateProjectService">
     <state x="189" y="257" width="888" height="331" key="#File_Watchers" timestamp="1591442426560">
@@ -262,10 +258,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1593332828652" />
-    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1593114702735">
+    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594205576537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1593114702735" />
+    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594205576537" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
