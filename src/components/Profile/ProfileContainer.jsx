@@ -1,50 +1,51 @@
-import React from 'react';
+import React from "react";
 import Profile from "./Profile";
-import * as axios from "axios";
-import {connect} from "react-redux";
-import {setUserProfile} from "../../Redux/profile-reducer";
-import {withRouter} from "react-router-dom";
+import { connect } from "react-redux";
+import {
+  getProfileThunkCreator,
+  getStatusThunkCreator,
+  setUserProfile, updateStatusThunkCreator,
+} from "../../Redux/profile-reducer";
+import { withRouter } from "react-router-dom";
 
 
-class ProfileContainer extends React.Component{
-    componentDidMount() {
-        debugger
-        let userId = this.props.match.params.userId;
-        if (!userId) {
-            axios.get(`https://social-network.samuraijs.com/api/1.0/auth/me`, {withCredentials: true}).then(response => {
-                if (response.data.resultCode === 0) {
-                    let userId = response.data.data.id;
-                    axios.get(`https://social-network.samuraijs.com/api/1.0/profile/` + userId).then(response => {
-                        this.props.setUserProfile(response.data);
-                    })
-                }
-                })
-            } else {
-            axios.get(`https://social-network.samuraijs.com/api/1.0/profile/` + userId).then(response => {
-                this.props.setUserProfile(response.data);
-            })
-        }
-        }
+import { compose } from "redux";
 
-        render()
-        {
-            return <Profile {...this.props} profile={this.props.profile}/>
-        }
+class ProfileContainer extends React.Component {
+  componentDidMount() {
+    let userId = this.props.match.params.userId;
+    if (!userId) {
+      userId = 7424;
     }
+    this.props.getProfile(userId);
+    this.props.getStatus(userId)
+  }
 
-    let
-    mapStateToProps = (state) => ({profile: state.profilePage.profile, loginId: state.auth.id});
+  componentDidUpdate(prevProps) {
 
+    // Популярный пример (не забудьте сравнить пропсы):
+    if (this.props.match.params.userId !== prevProps.match.params.userId) {
+      this.props.getProfile(7424);
+    }
+  }
 
-    let
-    WithUrlDataContainerComponent = withRouter(ProfileContainer);
+  render() {
+    return <Profile {...this.props} profile={this.props.profile} status={this.props.status} updateStatus={this.props.updateStatus}/>;
+  }
+}
 
-    export
-    default
+let mapStateToProps = (state) => ({
+  profile: state.profilePage.profile,
+  status: state.profilePage.status
+});
 
-    connect(mapStateToProps, {setUserProfile})
+export default compose(
+  connect(mapStateToProps, {
+    setUserProfile,
+    getProfile: getProfileThunkCreator,
+    getStatus: getStatusThunkCreator,
+    updateStatus: updateStatusThunkCreator
+  }),
 
-(
-    WithUrlDataContainerComponent
-)
-    ;
+  withRouter
+)(ProfileContainer);

@@ -1,3 +1,6 @@
+import {authAPI} from "../api/api";
+
+
 const SET_USER_DATA = 'SET_USER_DATA';
 const SET_PROFILE_AVATAR = 'SET_PROFILE_AVATAR'
 
@@ -37,3 +40,20 @@ export let setProfileAvatar = (photo) => ({type: SET_PROFILE_AVATAR,  profileAva
 
 
 export default authReducer
+
+
+
+
+export const authThunkCreator = () => {
+    return (dispatch) => {
+        authAPI.auth().then((data) => {
+            if (data.resultCode === 0) {
+                let { id, email, login } = data.data;
+                dispatch(setAuthUserData(id, email, login));
+                authAPI.setAuthProfile(id).then((data) => {
+                    dispatch(setProfileAvatar(data.photos.small));
+                });
+            }
+        });
+    };
+};

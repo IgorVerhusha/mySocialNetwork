@@ -1,20 +1,24 @@
-import {combineReducers, createStore} from "redux";
+import {applyMiddleware, combineReducers, createStore} from "redux";
 import profileReducer from "./profile-reducer";
 import dialogsReducer from "./dialogs-reducer";
 import friendsNavReducer from "./friends-nav-reducer";
 import usersReducer from "./users-reducer";
 import authReducer from "./auth-reducer";
+import thunkMiddleware from "redux-thunk";
+import {reducer as formReducer} from "redux-form";
+
 
 let reducers = combineReducers({
     profilePage: profileReducer,
     messagesPage: dialogsReducer,
-    friendsNavPage: friendsNavReducer, //друзья, необходимо доработать
+    friendsNavPage: friendsNavReducer,
     usersPage: usersReducer,
-    auth: authReducer
+    auth: authReducer,
+    form: formReducer
 });
 
 
-let store = createStore(reducers);
+let store = createStore(reducers, applyMiddleware(thunkMiddleware));
 
 window.store = store;
 

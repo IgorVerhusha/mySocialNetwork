@@ -7,12 +7,10 @@ import Post from "./Post/Post";
 
 // отрисовываем полученные посты
 const MyPosts = (props) => {
-    console.log(props)
 
     let newPostElement = React.createRef();
 
     let onAddPost = () => {
-        debugger
         if (props.profilePage.newPostText != ''){
         props.addPost();
         }
