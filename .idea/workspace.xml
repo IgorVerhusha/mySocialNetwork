@@ -6,33 +6,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 62">
-      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/app-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/users-selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/SendMessageForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/NewPostForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/validators/validators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepros.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/auth-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/dialogs-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/dialogs-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/users-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Preloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Preloader/Preloader.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,34 +75,43 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Resume/my-resume" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../chat Archakov/chat-lite" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\education\web\React_samurai\01-first-project\react-first-project\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\Redux" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\common\FormsControls" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Profile\MyPosts" />
       <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Header" />
       <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Profile" />
-      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Users" />
-      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\Redux" />
-      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Dialogs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\common\FormsControls" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\common\Preloader" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Dialogs" />
       <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Users" />
       <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Settings" />
-      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Profile\MyPosts" />
-      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Nav\FriendsList" />
-      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Nav\FriendsList\Friend" />
     </key>
   </component>
-  <component name="StructureViewFactory">
-    <option name="ACTIVE_ACTIONS" value=",HIDE_INHERITED_FROM_OBJECT" />
+  <component name="RunManager">
+    <configuration name="ProfileStatus.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" working-dir="$PROJECT_DIR$/src/components/Profile/ProfileInfo">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.ProfileStatus.jsx" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -182,6 +196,43 @@
       <workItem from="1594972697628" duration="4016000" />
       <workItem from="1595181908519" duration="10117000" />
       <workItem from="1595262589833" duration="9589000" />
+      <workItem from="1595321387918" duration="2781000" />
+      <workItem from="1595345982086" duration="1778000" />
+      <workItem from="1595347842881" duration="4234000" />
+      <workItem from="1595355913622" duration="605000" />
+      <workItem from="1595361110993" duration="2264000" />
+      <workItem from="1595613147786" duration="152000" />
+      <workItem from="1595872890613" duration="8250000" />
+      <workItem from="1595952367041" duration="1518000" />
+      <workItem from="1595954575107" duration="2157000" />
+      <workItem from="1596370987291" duration="4134000" />
+      <workItem from="1596525051013" duration="17947000" />
+      <workItem from="1596619713219" duration="15154000" />
+      <workItem from="1596711629511" duration="797000" />
+      <workItem from="1596789524169" duration="865000" />
+      <workItem from="1596980131558" duration="7000" />
+      <workItem from="1596990014671" duration="624000" />
+      <workItem from="1596990689626" duration="4000" />
+      <workItem from="1596992228160" duration="4000" />
+      <workItem from="1596992862441" duration="4000" />
+      <workItem from="1596993078388" duration="7000" />
+      <workItem from="1596998539830" duration="601000" />
+      <workItem from="1597221930228" duration="3787000" />
+      <workItem from="1597339095159" duration="8000" />
+      <workItem from="1597353121760" duration="4000" />
+      <workItem from="1597354511813" duration="6000" />
+      <workItem from="1597354775759" duration="10000" />
+      <workItem from="1597852337823" duration="14901000" />
+      <workItem from="1597941633126" duration="5447000" />
+      <workItem from="1598084841330" duration="4031000" />
+      <workItem from="1598459369072" duration="321000" />
+      <workItem from="1598892638705" duration="49000" />
+      <workItem from="1598892788658" duration="187000" />
+      <workItem from="1598896926519" duration="4016000" />
+      <workItem from="1598974405942" duration="31000" />
+      <workItem from="1598979451318" duration="97000" />
+      <workItem from="1598979568957" duration="10171000" />
+      <workItem from="1598995340739" duration="339000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 53">
       <created>1593707361807</created>
@@ -215,7 +266,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -251,26 +302,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="654" y="275" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1591441840293" />
-    <state x="447" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594316669230">
+    <state x="447" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595879066267">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594316669230" />
-    <state x="536" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593949270499">
+    <state x="447" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1595879066267" />
+    <state x="536" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596376793559">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="536" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1593949270499" />
+    <state x="536" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1596376793559" />
     <state x="472" y="191" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1591443198572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="472" y="191" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1591443198572" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595954401348">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1595954401348" />
     <state x="585" y="252" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593375596373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="585" y="252" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1593375596373" />
-    <state x="551" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593270131050">
+    <state x="551" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596532967387">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="551" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1593270131050" />
+    <state x="551" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596532967387" />
     <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1594840724250">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -279,18 +334,86 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="147" width="660" height="677" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1591443209990" />
-    <state x="472" y="241" key="FileChooserDialogImpl" timestamp="1595262823558">
+    <state x="472" y="241" key="FileChooserDialogImpl" timestamp="1598982533775">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="472" y="241" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595262823558" />
+    <state x="472" y="241" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598982533775" />
+    <state width="1515" height="253" key="GridCell.Tab.0.bottom" timestamp="1598994696512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598994696512" />
+    <state width="1515" height="253" key="GridCell.Tab.0.center" timestamp="1598994696511">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598994696511" />
+    <state width="1515" height="253" key="GridCell.Tab.0.left" timestamp="1598994696511">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598994696511" />
+    <state width="1515" height="253" key="GridCell.Tab.0.right" timestamp="1598994696511">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598994696511" />
+    <state width="1515" height="253" key="GridCell.Tab.1.bottom" timestamp="1598994696512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598994696512" />
+    <state width="1515" height="253" key="GridCell.Tab.1.center" timestamp="1598994696512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1598994696512" />
+    <state width="1515" height="253" key="GridCell.Tab.1.left" timestamp="1598994696512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1598994696512" />
+    <state width="1515" height="253" key="GridCell.Tab.1.right" timestamp="1598994696512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1598994696512" />
+    <state width="1515" height="253" key="GridCell.Tab.2.bottom" timestamp="1598994696513">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598994696513" />
+    <state width="1515" height="253" key="GridCell.Tab.2.center" timestamp="1598994696513">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1598994696513" />
+    <state width="1515" height="253" key="GridCell.Tab.2.left" timestamp="1598994696513">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1598994696513" />
+    <state width="1515" height="253" key="GridCell.Tab.2.right" timestamp="1598994696513">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1598994696513" />
+    <state width="1515" height="253" key="GridCell.Tab.3.bottom" timestamp="1598994696514">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598994696514" />
+    <state width="1515" height="253" key="GridCell.Tab.3.center" timestamp="1598994696513">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1598994696513" />
+    <state width="1515" height="253" key="GridCell.Tab.3.left" timestamp="1598994696513">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1598994696513" />
+    <state width="1515" height="253" key="GridCell.Tab.3.right" timestamp="1598994696513">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="253" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1598994696513" />
+    <state x="349" y="147" key="IDE.errors.dialog" timestamp="1596373532820">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1596373532820" />
     <state x="499" y="115" key="RollbackChangesDialog" timestamp="1592501823701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592501823701" />
-    <state x="201" y="115" key="SettingsEditor" timestamp="1594317136174">
+    <state x="201" y="115" key="SettingsEditor" timestamp="1596639150176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="201" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594317136174" />
+    <state x="201" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596639150176" />
     <state x="376" y="59" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592933945044">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -299,14 +422,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1591734034894" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1593332828652">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1598989467415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1593332828652" />
-    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595276722334">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1598989467415" />
+    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598982449547">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595276722334" />
+    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598982449547" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

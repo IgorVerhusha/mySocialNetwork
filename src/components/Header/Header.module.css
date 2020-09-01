@@ -14,10 +14,14 @@
     margin-left: 10px;
 }
 
-.loginProfile{
-    margin-bottom: 100px;
+.loginProfile {
+
 }
 
 .loginProfile img{
     width: 50px;
+}
+
+.logOutButton {
+    font-size: 10px;
 }

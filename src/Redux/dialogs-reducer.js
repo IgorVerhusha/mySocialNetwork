@@ -1,6 +1,7 @@
 const SEND_MESSAGE = 'SEND-MESSAGE';
-const CHANGE_NEW_MESSAGE_TEXT = 'CHANGE-NEW-MESSAGE-TEXT';
 
+
+let messageId = 5;
 let initialState = {
     messages: [
         {
@@ -30,9 +31,7 @@ let initialState = {
         {id: 4, name: 'Andrey', avatar: 'https://cs16planet.ru/steam-avatars/images/avatar2672.jpg'},
         {id: 5, name: 'Yuli', avatar: 'https://cs16planet.ru/steam-avatars/images/avatar3171.jpg'},
         {id: 6, name: 'Vlad', avatar: 'https://cs16planet.ru/steam-avatars/images/avatar2812.jpg'}
-    ],
-    // набранный текст в меседже
-    newMessageText: ''
+    ]
 };
 
 const dialogsReducer = (state = initialState, action) => {
@@ -40,14 +39,7 @@ const dialogsReducer = (state = initialState, action) => {
         case SEND_MESSAGE:
             return {
                 ...state,
-                newMessageText: '',
-                messages: [...state.messages, {id:5, message: state.newMessageText}],
-            };
-
-        case CHANGE_NEW_MESSAGE_TEXT:
-            return {
-                ...state,
-                newMessageText: action.text
+                messages: [...state.messages, {id:messageId++, message: action.newMessageBody}],
             };
 
         default:
@@ -55,18 +47,13 @@ const dialogsReducer = (state = initialState, action) => {
     }
 }
 
-export let sendMessage = () => {
+export let sendMessage = (newMessageBody) => {
     return {
-        type: SEND_MESSAGE
+        type: SEND_MESSAGE,
+        newMessageBody
     }
 }
 
-export let changeNewMessageText = (text) => {
-    return {
-        type: CHANGE_NEW_MESSAGE_TEXT,
-        text: text
-    }
-}
 
 
 export default dialogsReducer;

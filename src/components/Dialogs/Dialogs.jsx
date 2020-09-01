@@ -2,22 +2,20 @@ import React from "react";
 import classes from "./Dialogs.module.css";
 import Dialog from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
+import AddMessageReduxForm from "./SendMessageForm";
+
 
 
 
 const Dialogs = (props) => {
-  // сохраняем данные инпута сообщения
-  let newMessageElement = React.createRef();
-  let onSendMessage = () => {
-    if (props.messagesPage.newMessageText != "") {
-      props.sendMessage();
-    }
-  };
 
-  let onMessageChange = () => {
-    let text = newMessageElement.current.value;
-    props.changeNewMessageText(text);
-  };
+
+  let addNewMessage = (values) => {
+      if (values.newMessageBody !== undefined) {
+          props.sendMessage(values.newMessageBody)
+      }
+ };
+
 
   // преобразовываем полученный массив с диалогами в компоненту список диалогов
   let dialogsElements = props.messagesPage.dialogs.map((d) => (
@@ -35,22 +33,7 @@ const Dialogs = (props) => {
       <div className={classes.dialogItems}>{dialogsElements}</div>
       <div className={classes.messageItems}>
         <div>{messageElements}</div>
-        <div className={classes.inputMessage}>
-          <textarea
-            className="form-control"
-            aria-label="With textarea"
-            ref={newMessageElement}
-            value={props.messagesPage.newMessageText}
-            onChange={onMessageChange}
-          ></textarea>
-          <button
-            type="button"
-            className="btn btn-info"
-            onClick={onSendMessage}
-          >
-            Send
-          </button>
-        </div>
+        <AddMessageReduxForm onSubmit={addNewMessage}/>
       </div>
     </div>
   );

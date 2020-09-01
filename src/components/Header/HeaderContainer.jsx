@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import { connect } from "react-redux";
-import {authThunkCreator, setAuthUserData, setProfileAvatar} from "../../Redux/auth-reducer";
+import {authThunkCreator, logoutThunkCreator, setAuthUserData, setProfileAvatar} from "../../Redux/auth-reducer";
 
 
 class HeaderContainer extends React.Component {
@@ -21,6 +21,6 @@ let mapStateToProps = (state) => ({
   profileAvatarPath: state.auth.profileAvatarPath,
 });
 
-export default connect(mapStateToProps, { setAuthUserData, setProfileAvatar, authThunk: authThunkCreator })(
+export default connect(mapStateToProps, { setAuthUserData, setProfileAvatar, authThunk: authThunkCreator, logoutThunkCreator })(
   HeaderContainer
 );
