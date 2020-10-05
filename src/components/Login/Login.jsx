@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Login.module.css";
-import { Field, reduxForm, reset } from "redux-form";
+import { Field, reduxForm} from "redux-form";
 import {Input} from "../common/FormsControls/FormsControls";
 import {minLengthCreator, required} from "../../utils/validators/validators";
 import {loginThunkCreator} from "../../Redux/auth-reducer";
@@ -10,9 +10,9 @@ import {Redirect} from "react-router-dom";
 
 const minLength2 = minLengthCreator(3)
 
-const LoginForm = (props) => {
+const LoginForm = ({handleSubmit, error}) => {
   return (
-    <form onSubmit={props.handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <div>
         <Field placeholder={"Login"} name={"email"} component={Input}  validate={[required, minLength2]}/>
       </div>
@@ -23,8 +23,8 @@ const LoginForm = (props) => {
         <Field type={"checkbox"} name={"rememberMe"} component={Input} />
         remember me
       </div>
-        {props.error && <div className={classes.formSummaryError}>
-            {props.error}
+        {error && <div className={classes.formSummaryError}>
+            {error}
         </div>}
       <div>
         <button>Log in</button>
@@ -33,9 +33,6 @@ const LoginForm = (props) => {
   );
 };
 
-const afterSubmit = (result, dispatch) => {
-  dispatch(reset("login"));
-};
 
 const Login = (props) => {
   const onSubmit = (formData) => {
@@ -57,7 +54,6 @@ const Login = (props) => {
 
 const LoginReduxForm = reduxForm({
   form: "login"
-//  ,onSubmitSuccess: afterSubmit
 })(LoginForm);
 
 const mapStateToProps = (state) => ({

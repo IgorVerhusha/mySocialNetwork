@@ -20,7 +20,6 @@ const ProfileStatus = (props) => {
   const onStatusChange = (e) => {
     setStatus(e.currentTarget.value);
   };
-console.log('render')
   return (
     <div>
       {!editMode ? (
@@ -30,10 +29,10 @@ console.log('render')
           </span>
         </div>
       ) : (
-        <div>
+        <div >
           <input
-            autoFocus={true}
-            onBlur={deactivateEditMode}
+              autoFocus={true}
+              onBlur={deactivateEditMode}
             value={status}
             onChange={onStatusChange}
           />

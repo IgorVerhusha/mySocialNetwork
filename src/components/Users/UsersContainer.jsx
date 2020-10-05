@@ -1,28 +1,27 @@
 import React from "react";
 import { connect } from "react-redux";
 import {
-    follow,
-    followThunkCreator,
-    getUsersThunkCreator,
-    setCurrentPage,
-    setTotalUsersCount,
-    setUsers,
-    toggleIsFetching,
-    toggleIsFollowingProgress,
-    unfollow,
-    unfollowThunkCreator,
+  follow,
+  followThunkCreator,
+  getUsersThunkCreator,
+  setCurrentPage,
+  setTotalUsersCount,
+  setUsers,
+  toggleIsFetching,
+  toggleIsFollowingProgress,
+  unfollow,
+  unfollowThunkCreator,
 } from "../../Redux/users-reducer";
 import Users from "./Users.js";
-import Preloader from "../common/Preloader/Preloader";
-import { withAuthRedirect } from "../../hoc/withAuthRedirect";
 import { compose } from "redux";
 import {
-    getCurrentPage,
-    getFollowingInProgress,
-    getIsFetching,
-    getPageSize,
-    getTotalUsersCount,
-    getUsers
+  getCurrentPage,
+  getFollowingInProgress,
+  getIsFetching,
+  getPageSize,
+
+  getTotalUsersCount,
+  getUsers,
 } from "../../Redux/users-selectors";
 
 class UsersContainer extends React.Component {
@@ -38,12 +37,11 @@ class UsersContainer extends React.Component {
   render() {
     return (
       <>
-        {this.props.isFetching ? (
-          <Preloader />
-        ) : (
+
           <Users
             totalUsersCount={this.props.totalUsersCount}
             pageSize={this.props.pageSize}
+            portionSize = {this.props.portionSize}
             currentPage={this.props.currentPage}
             onPageChanged={this.onPageChanged}
             users={this.props.users}
@@ -52,6 +50,7 @@ class UsersContainer extends React.Component {
             followingInProgress={this.props.followingInProgress}
             followThunk={this.props.followThunk}
             unfollowThunk={this.props.unfollowThunk}
+            isFetching={this.props.isFetching}
           />
         )}
       </>
@@ -70,19 +69,6 @@ let mapStateToProps = (state) => {
   };
 };
 
-// let mapStateToProps = (state) => {
-//     return {
-//         users: state.usersPage.users,
-//         pageSize: state.usersPage.pageSize,
-//         totalUsersCount: state.usersPage.totalUsersCount,
-//         currentPage: state.usersPage.currentPage,
-//         isFetching: state.usersPage.isFetching,
-//         followingInProgress: state.usersPage.followingInProgress,
-//     };
-// };
-
-
-
 export default compose(
   connect(mapStateToProps, {
     follow,
@@ -94,6 +80,6 @@ export default compose(
     toggleIsFollowingProgress,
     getUsers: getUsersThunkCreator,
     followThunk: followThunkCreator,
-    unfollowThunk: unfollowThunkCreator
+    unfollowThunk: unfollowThunkCreator,
   })
 )(UsersContainer);

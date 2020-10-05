@@ -10,10 +10,11 @@ import UsersContainer from "./components/Users/UsersContainer";
 import LoginPage from "./components/Login/Login";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
-import  { connect } from "react-redux";
+import {connect} from "react-redux";
 import { compose } from "redux";
 import {initializeApp} from "./Redux/app-reducer";
 import Preloader from "./components/common/Preloader/Preloader";
+
 
 class App extends React.Component {
   componentDidMount() {
@@ -26,6 +27,7 @@ class App extends React.Component {
     }
     return (
       <BrowserRouter>
+
         <div className={"app-wrapper"}>
           <HeaderContainer />
           <Nav />
@@ -44,6 +46,7 @@ class App extends React.Component {
             <Route path="/login" render={() => <LoginPage />} />
           </div>
         </div>
+
       </BrowserRouter>
     );
   }

@@ -46,6 +46,7 @@ export const authAPI = {
             .get(`auth/me`).then((response) => response.data)
     },
     setAuthProfile(id) {
+
         return instance
             .get(`profile/${id}`).then((response) => response.data)
     },

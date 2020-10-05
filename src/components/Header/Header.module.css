@@ -14,11 +14,13 @@
     margin-left: 10px;
 }
 
-.loginProfile {
-
+.loginContainer {
+display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.loginProfile img{
+.loginContainer img{
     width: 50px;
 }
 
