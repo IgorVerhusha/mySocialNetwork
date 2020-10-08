@@ -5,19 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 95&#10;пробую деплоить">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 95&#10;пробую деплоить хероку">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/precache-manifest.c0df7b291532e1d86da8afb4de78889e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.5b7c72d4.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.5b7c72d4.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.22072f81.chunk.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/2.22072f81.chunk.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Archakov/react-pizza/food-krama/server.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Archakov/react-pizza/food-krama/package.json" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -297,7 +287,7 @@
       <workItem from="1602015669079" duration="215000" />
       <workItem from="1602017713548" duration="314000" />
       <workItem from="1602170129840" duration="9414000" />
-      <workItem from="1602184807092" duration="820000" />
+      <workItem from="1602184807092" duration="1513000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 53">
       <created>1593707361807</created>
@@ -355,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602178826964</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lesson 95&#10;пробую деплоить хероку">
+      <created>1602185694185</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602185694185</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +384,8 @@
     <MESSAGE value="lesson 87" />
     <MESSAGE value="lesson 93&#10;добавил пагинатор" />
     <MESSAGE value="lesson 95&#10;пробую деплоить" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 95&#10;пробую деплоить" />
+    <MESSAGE value="lesson 95&#10;пробую деплоить хероку" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 95&#10;пробую деплоить хероку" />
   </component>
   <component name="WindowStateProjectService">
     <state x="447" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595879066267">
@@ -414,10 +412,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1594840724250" />
-    <state x="472" y="241" key="FileChooserDialogImpl" timestamp="1602185582024">
+    <state x="472" y="241" key="FileChooserDialogImpl" timestamp="1602186059864">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="472" y="241" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602185582024" />
+    <state x="472" y="241" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602186059864" />
     <state width="1515" height="242" key="GridCell.Tab.0.bottom" timestamp="1602183725343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -490,10 +488,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="201" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602015713824" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1602178854535">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1602185700132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602178854535" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602185700132" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1598989467415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
