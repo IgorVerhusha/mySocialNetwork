@@ -8,7 +8,7 @@ const SET_CURRENT_PAGE = "SET-CURRENT-PAGE";
 const SET_TOTAL_USERS_COUNT = "SET-TOTAL-USERS-COUNT";
 const TOGGLE_IS_FETCHING = "TOGGLE_IS_FETCHING";
 const TOGGLE_IS_FOLLOWING_PROGRESS = "TOGGLE_IS_FOLLOWING_PROGRESS";
-
+const SET_PAGINATOR_PAGE = "SET_PAGINATOR_PAGE"
 
 
 let initialState = {
@@ -17,7 +17,8 @@ let initialState = {
   totalUsersCount: 0,
   currentPage: 1,
   isFetching: false,
-  followingInProgress: []
+  followingInProgress: [],
+  paginatorPage: 1
 };
 
 const usersReducer = (state = initialState, action) => {
@@ -42,6 +43,11 @@ const usersReducer = (state = initialState, action) => {
         ...state,
         currentPage: action.currentPage,
       };
+    case SET_PAGINATOR_PAGE:
+      return {
+        ...state,
+        paginatorPage: action.currentPaginatorPage
+      }
     case SET_TOTAL_USERS_COUNT:
       return {
         ...state,
@@ -72,6 +78,10 @@ export let setCurrentPage = (pageNumber) => ({
   type: SET_CURRENT_PAGE,
   currentPage: pageNumber,
 });
+export let setPaginatorPage = (pageNumber) => ({
+  type: SET_PAGINATOR_PAGE,
+  currentPaginatorPage: pageNumber
+})
 export let setTotalUsersCount = (totalCount) => ({
   type: SET_TOTAL_USERS_COUNT,
   totalCount: totalCount,

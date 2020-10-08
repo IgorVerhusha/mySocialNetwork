@@ -1,9 +1,10 @@
 import React from "react";
 import classes from "./Nav.module.css";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
+
 
 // панель с навигацией
-const Nav = (props) => {
+const Nav = () => {
   return (
     <nav className={classes.nav}>
       <div className={classes.item}>

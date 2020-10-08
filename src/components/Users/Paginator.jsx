@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./Users.module.css";
 
 let Paginator = ({
@@ -7,6 +7,8 @@ let Paginator = ({
   currentPage = 1,
   onPageChanged,
   portionSize = 30,
+  paginatorPage = 1,
+  setPaginatorPage,
 }) => {
   let pagesCount = Math.ceil(totalItemsCount / pageSize);
   let pages = [];
@@ -15,26 +17,47 @@ let Paginator = ({
   }
 
   let portionCount = Math.ceil(pagesCount / portionSize);
-  let [portionNumber, setPortionNumber] = useState(1);
-  let leftPortionPageNumber = (portionNumber - 1) * portionSize + 1;
-  let rightPortionPageNumber = portionNumber * portionSize;
+
+  let leftPortionPageNumber = (paginatorPage - 1) * portionSize + 1;
+  let rightPortionPageNumber = paginatorPage * portionSize;
   return (
     <div className={classes.pagesCount}>
-      {portionNumber > 1 &&
-      <button onClick={()=>{setPortionNumber(portionNumber-1)}}>PREV</button>}
-      {pages.filter(p=> p >= leftPortionPageNumber && p <= rightPortionPageNumber).map((p) => {
-        return (
-          <span
-            key={p}
-            className={currentPage === p ? classes.selectedPage : classes}
-            onClick={() => {
-              onPageChanged(p);
-            }}
-          > {p}</span>
-        );
-      })}
-      {portionCount > portionNumber &&
-      <button onClick={()=>{setPortionNumber(portionNumber+1)}}>NEXT</button>}
+      {paginatorPage > 1 && (
+        <button
+          onClick={() => {
+            setPaginatorPage(paginatorPage - 1);
+          }}
+        >
+          PREV
+        </button>
+      )}
+      {pages
+        .filter(
+          (p) => p >= leftPortionPageNumber && p <= rightPortionPageNumber
+        )
+        .map((p) => {
+          return (
+            <span
+              key={p}
+              className={currentPage === p ? classes.selectedPage : classes}
+              onClick={() => {
+                onPageChanged(p);
+              }}
+            >
+              {" "}
+              {p}
+            </span>
+          );
+        })}
+      {portionCount > paginatorPage && (
+        <button
+          onClick={() => {
+            setPaginatorPage(paginatorPage + 1);
+          }}
+        >
+          NEXT
+        </button>
+      )}
     </div>
   );
 };

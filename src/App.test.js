@@ -1,9 +1,20 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import ReactDOM from 'react-dom'
+import SamuraiJsApp from "./App";
+import { create } from "react-test-renderer";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+test('renders without crashing', () => {
+  const div = document.createElement('div')
+  ReactDOM.render(<SamuraiJsApp/>, div);
+  ReactDOM.unmountComponentAtNode(div)
+});
+
+
+describe("Button component", () => {
+  test("it shows the expected text when clicked (testing the wrong way!)", () => {
+    const component = create(<Button text="SUBSCRIBE TO BASIC" />);
+    const instance = component.getInstance();
+    expect(instance.state.text).toBe("");
+  });
 });
