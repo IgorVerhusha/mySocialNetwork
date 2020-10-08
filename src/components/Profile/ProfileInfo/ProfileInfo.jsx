@@ -9,7 +9,7 @@ const ProfileInfo = (props) => {
         return <Preloader/>
     } else {
         return <div>
-            <div><img src={'/images/main_image.png'}/>
+            <div><img src={'https://igorverhusha.github.io/mySocialNetwork/images/main_image.png'}/>
             </div>
             <div className={classes.item}>
                 <div><img src={!props.profile.photos.large ? "https://cs16planet.ru/steam-avatars/images/avatar449.jpg" : props.profile.photos.large}/></div>
