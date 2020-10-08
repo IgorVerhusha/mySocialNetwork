@@ -1,0 +1,13 @@
+.formControl {
+  width: 400px;
+}
+
+.error textarea,
+.error input {
+  border: red solid 3px;
+}
+.error span {
+  color: red;
+}
+
+/*# sourceMappingURL=FormsControls.module.css.map */
