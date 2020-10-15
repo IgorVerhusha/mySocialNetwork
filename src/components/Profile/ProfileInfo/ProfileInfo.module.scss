@@ -13,10 +13,21 @@
 .item {
     color: #f0e8e8;
     padding: 20px;
-
+.profileData {
+    margin: 50px 0;
+    .contact {
+        margin-left: 20px;
+    }
+}
 }
 
 .item img {
     height: 200px;
     width: 200px;
+}
+
+.formSummaryError {
+    border: red solid 3px;
+    padding: 5px;
+    color: red;
 }
