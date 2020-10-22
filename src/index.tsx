@@ -1,9 +1,11 @@
 import React from 'react';
 import './index.css';
+
 import * as serviceWorker from './serviceWorker';
 import ReactDOM from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SamuraiJsApp from "./App";
+
+import SamuraiJsApp from "./App.jsx";
 
 
 

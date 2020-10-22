@@ -17,9 +17,16 @@ import store from "./Redux/redux-store";
 const Music = React.lazy(() => import("./components/Music/Music"));
 
 class App extends React.Component {
+  catchAllUnhandledErrors  ()  {
+    alert("Some error occured")
+  }
   componentDidMount() {
     this.props.initializeApp();
+    window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors)
   }
+componentWillMount() {
+  window.removeEventListener("unhandledrejection", this.catchAllUnhandledErrors)
+}
 
   render() {
     if (!this.props.initialized) {
