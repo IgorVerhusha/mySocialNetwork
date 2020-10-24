@@ -16,8 +16,8 @@ let Users = ({totalUsersCount, pageSize, currentPage, onPageChanged, users, setP
        <User user={u}
               followingInProgress={props.followingInProgress}
               key={u.id}
-              unfollow={props.unfollow}
-              follow={props.follow}/>
+              unfollow={props.unfollowThunk}
+              follow={props.followThunk}/>
       )))}
      </div>
     </div>

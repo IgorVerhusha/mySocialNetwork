@@ -49,8 +49,6 @@ class UsersContainer extends React.Component {
             onPageChanged={this.onPageChanged}
             setPaginatorPage={this.props.setPaginatorPage}
             users={this.props.users}
-            follow={this.props.follow}
-            unfollow={this.props.unfollow}
             followingInProgress={this.props.followingInProgress}
             followThunk={this.props.followThunk}
             unfollowThunk={this.props.unfollowThunk}
@@ -77,8 +75,7 @@ let mapStateToProps = (state) => {
 
 export default compose(
   connect(mapStateToProps, {
-    follow,
-    unfollow,
+
     setUsers,
     setCurrentPage,
       setPaginatorPage,

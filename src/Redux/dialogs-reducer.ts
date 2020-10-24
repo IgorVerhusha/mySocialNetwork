@@ -1,6 +1,21 @@
 const SEND_MESSAGE = "SEND-MESSAGE";
 
-let messageId = 5;
+// type initialStateType = {
+//   messages: Array<messagesType>
+//   dialogs: Array<dialogsType>
+// }
+
+type messagesType = {
+  id: number
+  message:string
+  style?:object
+}
+
+type dialogsType = {
+  id: number
+  name:string
+  avatar: string
+}
 let initialState = {
   messages: [
     {
@@ -27,8 +42,8 @@ let initialState = {
         marginLeft: "20%",
       },
     },
-  ],
-  // массив с диалогами
+  ] as Array<messagesType>,
+
   dialogs: [
     {
       id: 1,
@@ -60,17 +75,19 @@ let initialState = {
       name: "Vlad",
       avatar: "https://cs16planet.ru/steam-avatars/images/avatar2812.jpg",
     },
-  ],
+  ] as Array<dialogsType>,
 };
 
-const dialogsReducer = (state = initialState, action) => {
+type initialStateType = typeof initialState
+
+ const dialogsReducer = (state = initialState, action:any):initialStateType => {
   switch (action.type) {
     case SEND_MESSAGE:
       return {
         ...state,
         messages: [
           ...state.messages,
-          { id: messageId++, message: action.newMessageBody },
+          { id: 7, message: action.newMessageBody },
         ],
       };
 
@@ -79,11 +96,15 @@ const dialogsReducer = (state = initialState, action) => {
   }
 };
 
-export let sendMessage = (newMessageBody) => {
-  return {
+export default dialogsReducer
+
+type sendMessageActionType = {
+  type: typeof SEND_MESSAGE
+  newMessageBody: string
+}
+export let sendMessage = (newMessageBody:string):sendMessageActionType => ({
     type: SEND_MESSAGE,
     newMessageBody,
-  };
-};
+  }
+)
 
-export default dialogsReducer;

@@ -4,6 +4,7 @@ import React from "react";
 
 
 const User = (props) => {
+
    return ( <div className={classes.card}>
         <div className={classes.picture}>
             <NavLink to={"/profile/" + props.user.id}>
@@ -21,7 +22,7 @@ const User = (props) => {
                     <button
                         disabled={props.followingInProgress.some((id) => id === props.user.id)}
                         onClick={() => {
-                            props.unfollowThunk(props.user.id);
+                            props.unfollow(props.user.id);
                         }}
                     >
                         unfollow
@@ -30,7 +31,7 @@ const User = (props) => {
                     <button
                         disabled={props.followingInProgress.some((id) => id === props.user.id)}
                         onClick={() => {
-                            props.followThunk(props.user.id);
+                            props.follow(props.user.id);
                         }}
                     >
                         follow

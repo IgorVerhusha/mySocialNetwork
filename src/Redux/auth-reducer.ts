@@ -134,3 +134,4 @@ export const getCaptchaUrl = () => async (dispatch: any) => {
   const data = await securityAPI.getCaptchaUrl()
     dispatch(setCaptchaUrl(data.url));
 };
+
