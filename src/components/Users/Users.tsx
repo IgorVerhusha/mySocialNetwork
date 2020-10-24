@@ -2,9 +2,24 @@ import React from "react";
 import Paginator from "./Paginator";
 import User from "./User";
 import Preloader from "../common/Preloader/Preloader";
+import {userType} from "../../Redux/types/types";
+
+type Props = {
+    totalUsersCount: number
+    pageSize:number
+    currentPage: number
+    onPageChanged: (pageNumber:number)=> void
+    paginatorPage:number
+    setPaginatorPage: (pageNumber:number)=>void
+    users: Array<userType>
+    followingInProgress: Array<number>
+    isFetching: boolean
+    followThunk: (id:number)=>void
+    unfollowThunk: (id:number)=>void
+}
 
 
-let Users = ({totalUsersCount, pageSize, currentPage, onPageChanged, users, setPaginatorPage, paginatorPage, ...props}) => {
+const Users: React.FC<Props> = ({totalUsersCount, pageSize, currentPage, onPageChanged, users, setPaginatorPage, paginatorPage, ...props}) => {
 
   return (
     <div>

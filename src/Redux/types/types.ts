@@ -21,3 +21,11 @@ export type photosType = {
     small: string
     large: string
 }
+
+export type userType = {
+    name: string
+    id: number
+    photos: photosType
+    status: string | null
+    followed: boolean
+}

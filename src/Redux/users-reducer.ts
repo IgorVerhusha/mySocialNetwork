@@ -1,6 +1,6 @@
 import {usersAPI} from "../api/api";
 import {updateObjectInArray} from "../utils/helpFunctions";
-import { photosType } from "./types/types";
+import { photosType, userType } from "./types/types";
 
 const FOLLOW = "FOLLOW";
 const UNFOLLOW = "UNFOLLOW";
@@ -15,13 +15,7 @@ const SET_PAGINATOR_PAGE = "SET_PAGINATOR_PAGE"
 
 type initialState = typeof initialState
 
-type userType = {
-  name: string
-  id: number
-  photos: photosType
-  status: string | null
-  followed: boolean
-}
+
 
 
 let initialState = {
