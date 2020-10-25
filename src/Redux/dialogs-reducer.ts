@@ -80,7 +80,7 @@ let initialState = {
 
 type initialStateType = typeof initialState
 
- const dialogsReducer = (state = initialState, action:any):initialStateType => {
+ const dialogsReducer = (state = initialState, action:ActionsTypes):initialStateType => {
   switch (action.type) {
     case SEND_MESSAGE:
       return {
@@ -97,6 +97,8 @@ type initialStateType = typeof initialState
 };
 
 export default dialogsReducer
+
+type ActionsTypes = sendMessageActionType
 
 type sendMessageActionType = {
   type: typeof SEND_MESSAGE

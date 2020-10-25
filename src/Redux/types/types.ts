@@ -29,3 +29,8 @@ export type userType = {
     status: string | null
     followed: boolean
 }
+
+export type setProfileAvatarActionType = {
+    type: any;
+    profileAvatarPath: string;
+};

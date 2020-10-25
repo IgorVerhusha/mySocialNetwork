@@ -1,7 +1,9 @@
 import {profileAPI} from "../api/api";
 import {setProfileAvatar} from "./auth-reducer";
 import {stopSubmit} from "redux-form";
-import {photosType, profileType } from "./types/types";
+import {photosType, profileType, setProfileAvatarActionType } from "./types/types";
+import {ThunkAction} from "redux-thunk";
+import {AppStateType} from "./redux-store";
 
 
 const ADD_POST = 'ADD-POST';
@@ -30,7 +32,7 @@ let initialState = {
 };
 type initialState = typeof initialState
 
-const profileReducer = (state = initialState, action: any):initialState => {
+const profileReducer = (state = initialState, action: ActionsTypes):initialState => {
 
     switch (action.type) {
         case ADD_POST:
@@ -55,6 +57,9 @@ const profileReducer = (state = initialState, action: any):initialState => {
 
     }
 }
+
+
+type ActionsTypes = setUserProfileActionType | getStatusType | setPhotoActionType  | addPostActionType
 
 type addPostActionType = {
     type: typeof ADD_POST
@@ -81,14 +86,16 @@ type setPhotoActionType = {
 }
 export const setPhoto = (photos:photosType): setPhotoActionType => ({type: SET_PHOTO, photos})
 
-export const getProfileThunkCreator = (userId:number) => async (dispatch:any) => {
+type ThunkType = ThunkAction<Promise<void>, AppStateType, unknown, ActionsTypes>
+
+export const getProfileThunkCreator = (userId:number):ThunkType => async (dispatch) => {
     if (userId) {
      let data = await profileAPI.getProfile(userId)
                  dispatch(setUserProfile(data));
     }
     };
 
-export const getStatusThunkCreator = (userId:number) => async (dispatch:any) => {
+export const getStatusThunkCreator = (userId:number):ThunkType => async (dispatch) => {
     if (userId) {
         let data = await profileAPI.getStatus(userId)
         dispatch(getStatus(data));
@@ -96,14 +103,14 @@ export const getStatusThunkCreator = (userId:number) => async (dispatch:any) => 
     }
 
 
-export const updateStatusThunkCreator = (status:string) => async (dispatch:any) => {
+export const updateStatusThunkCreator = (status:string): ThunkType => async (dispatch) => {
      let data = await  profileAPI.updateStatus(status)
                 if (data.resultCode === 0) {
                     dispatch(getStatus(status))
                 }
 }
 
-export const savePhoto = (photo:object) => async (dispatch:any) => {
+export const savePhoto = (photo:object): ThunkAction<Promise<void>, AppStateType, unknown, ActionsTypes | setProfileAvatarActionType> => async (dispatch) => {
     let data = await profileAPI.savePhoto(photo)
     if (data.resultCode === 0) {
        dispatch(setPhoto(data.data.photos))
@@ -111,13 +118,15 @@ export const savePhoto = (photo:object) => async (dispatch:any) => {
     }
 }
 
-export const saveProfile = (formData:object) => async (dispatch:any, getState:any) => {
+
+export const saveProfile = (formData:object): ThunkType => async (dispatch, getState:any) => {
     const userId = getState().auth.id
     let data = await profileAPI.saveProfile(formData)
     if (data.resultCode === 0) {
         dispatch(getProfileThunkCreator(userId))
     } else {
 
+        // @ts-ignore
         dispatch(stopSubmit("profileData", {_error: data.messages[0]}))
         return Promise.reject(data.messages[0])
     }

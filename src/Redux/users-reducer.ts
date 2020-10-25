@@ -170,12 +170,12 @@ export let toggleIsFollowingProgress = (
 });
 
 type DispatchType = Dispatch<ActionsTypes>
-type GetStateType = () => AppStateType
+type ThunkType = ThunkAction<Promise<void>, AppStateType, unknown, ActionsTypes>
 
 export const getUsersThunkCreator = (
   currentPage: number,
   pageSize: number
-): ThunkAction<Promise<void>, AppStateType, unknown, ActionsTypes> => async (dispatch) => {
+): ThunkType => async (dispatch) => {
   dispatch(toggleIsFetching(true));
   let data = await usersAPI.getUsers(currentPage, pageSize);
   dispatch(toggleIsFetching(false));
@@ -187,8 +187,8 @@ const followUnfollowFlow = async (
   id: number,
   dispatch: DispatchType,
   followType: any,
-  actionCreator: any
-) => {
+  actionCreator: (id:number)=> followActionType | unfollowActionType
+)=> {
   dispatch(toggleIsFollowingProgress(true, id));
   let data = await followType(id);
   if (data.resultCode == 0) {
@@ -197,10 +197,10 @@ const followUnfollowFlow = async (
   dispatch(toggleIsFollowingProgress(false, id));
 };
 
-export const followThunkCreator = (id: number) => (dispatch: any) => {
-  followUnfollowFlow(id, dispatch, usersAPI.follow, follow);
-};
+export const followThunkCreator = (id: number):ThunkType => {return async (dispatch) => {
+ await followUnfollowFlow(id, dispatch, usersAPI.follow, follow);
+}}
 
-export const unfollowThunkCreator = (id: number) => (dispatch: any) => {
-  followUnfollowFlow(id, dispatch, usersAPI.unfollow, unfollow);
-};
+export const unfollowThunkCreator = (id: number):ThunkType => {return async (dispatch) => {
+ await followUnfollowFlow(id, dispatch, usersAPI.unfollow, unfollow);
+}}

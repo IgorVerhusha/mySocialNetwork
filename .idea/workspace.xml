@@ -5,8 +5,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 105&#10;added typescript to users">
+    <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 105&#10;added typescript to redux-thunks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/app-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/dialogs-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/dialogs-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/types/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/users-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -302,7 +307,8 @@
       <workItem from="1603383492284" duration="10000" />
       <workItem from="1603383506566" duration="11579000" />
       <workItem from="1603525355871" duration="6265000" />
-      <workItem from="1603533532145" duration="17404000" />
+      <workItem from="1603533532145" duration="17501000" />
+      <workItem from="1603610333502" duration="5658000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 53">
       <created>1593707361807</created>
@@ -416,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603551591750</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="lesson 105&#10;added typescript to redux-thunks">
+      <created>1603556375124</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603556375124</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +466,8 @@
     <MESSAGE value="lesson 104&#10;added typescript to reducers" />
     <MESSAGE value="lesson 104&#10;added typescript to redux" />
     <MESSAGE value="lesson 105&#10;added typescript to users" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 105&#10;added typescript to users" />
+    <MESSAGE value="lesson 105&#10;added typescript to redux-thunks" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 105&#10;added typescript to redux-thunks" />
   </component>
   <component name="WindowStateProjectService">
     <state x="447" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595879066267">
@@ -556,10 +570,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1602697939949" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1603551608685">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1603556378250">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603551608685" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603556378250" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1603532954300">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
