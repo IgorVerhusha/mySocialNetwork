@@ -119,7 +119,7 @@ export const savePhoto = (photo:object): ThunkAction<Promise<void>, AppStateType
 }
 
 
-export const saveProfile = (formData:object): ThunkType => async (dispatch, getState:any) => {
+export const saveProfile = (formData:profileType): ThunkType => async (dispatch, getState:any) => {
     const userId = getState().auth.id
     let data = await profileAPI.saveProfile(formData)
     if (data.resultCode === 0) {

@@ -1,7 +1,8 @@
-import { authAPI, securityAPI } from "../api/api";
+import { authAPI, ResultCodeEnum, securityAPI } from "../api/api";
 import { stopSubmit } from "redux-form";
-import {ThunkAction} from "redux-thunk";
-import {AppStateType} from "./redux-store";
+import { ThunkAction } from "redux-thunk";
+import { AppStateType } from "./redux-store";
+
 const SET_USER_DATA = "SET_USER_DATA";
 const SET_PROFILE_AVATAR = "SET_PROFILE_AVATAR";
 const LOGIN_IS_TRUE = "LOGIN_IS_TRUE";
@@ -55,11 +56,10 @@ const authReducer = (
 };
 
 type ActionsTypes =
-  setProfileAvatarActionType
+  | setProfileAvatarActionType
   | loginIsTrueActionType
   | setCaptchaUrlActionType
-  | setAuthUserDataActionType
-
+  | setAuthUserDataActionType;
 
 type setAuthUserDataActionType = {
   type: typeof SET_USER_DATA;
@@ -116,12 +116,16 @@ export const setCaptchaUrl = (captchaUrl: string): setCaptchaUrlActionType => ({
 
 export default authReducer;
 
+type ThunkType = ThunkAction<
+  Promise<void>,
+  AppStateType,
+  unknown,
+  ActionsTypes
+>;
 
-type ThunkType = ThunkAction<Promise<void>, AppStateType, unknown, ActionsTypes>
-
-export const authThunkCreator = ():ThunkType => async (dispatch) => {
+export const authThunkCreator = (): ThunkType => async (dispatch) => {
   let data = await authAPI.auth();
-  if (data.resultCode === 0) {
+  if (data.resultCode === ResultCodeEnum.success) {
     let { id, email, login } = data.data;
     dispatch(setAuthUserData(id, email, login, true));
     authAPI.setAuthProfile(id).then((data: any) => {
@@ -137,10 +141,10 @@ export const loginThunkCreator = (
   captcha: string
 ): ThunkType => async (dispatch) => {
   let data = await authAPI.login(email, password, rememberMe, captcha);
-  if (data.resultCode === 0) {
+  if (data.resultCode === ResultCodeEnum.success) {
     dispatch(authThunkCreator());
   } else {
-    if (data.resultCode === 10) {
+    if (data.resultCode === ResultCodeEnum.captchaIsRequired) {
       dispatch(getCaptchaUrl());
     }
     let message = data.messages.length > 0 ? data.messages[0] : "Common wrong";
@@ -150,7 +154,7 @@ export const loginThunkCreator = (
 
 export const logoutThunkCreator = (): ThunkType => async (dispatch) => {
   let data = await authAPI.logout();
-  if (data.resultCode === 0) {
+  if (data.resultCode === ResultCodeEnum.success) {
     dispatch(setAuthUserData(null, null, null, false));
   }
 };
