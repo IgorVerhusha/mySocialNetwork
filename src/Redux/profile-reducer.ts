@@ -1,13 +1,13 @@
-import {profileAPI} from "../api/api";
-import {setProfileAvatar} from "./auth-reducer";
-import {stopSubmit} from "redux-form";
-import {photosType, profileType, setProfileAvatarActionType } from "./types/types";
-import {ThunkAction} from "redux-thunk";
-import {AppStateType} from "./redux-store";
+import {profileAPI, ResultCodeEnum} from "../api/api"
+import {setProfileAvatar} from "./auth-reducer"
+import {stopSubmit} from "redux-form"
+import {photosType, profileType, setProfileAvatarActionType } from "./types/types"
+import {ThunkAction} from "redux-thunk"
+import {AppStateType} from "./redux-store"
 
 
-const ADD_POST = 'ADD-POST';
-const SET_USER_PROFILE = 'SET_USER_PROFILE';
+const ADD_POST = 'ADD-POST'
+const SET_USER_PROFILE = 'SET_USER_PROFILE'
 const GET_STATUS = 'GET_STATUS'
 const SET_PHOTO = 'SET_PHOTO'
 
@@ -39,11 +39,11 @@ const profileReducer = (state = initialState, action: ActionsTypes):initialState
             return {
                 ...state,
                 posts: [...state.posts, {id: 4, post: action.newPostBody, likesCount: 0}],
-            };
+            }
         case SET_USER_PROFILE:
             return {
                 ...state, profile: action.profile
-            };
+            }
         case GET_STATUS:
             return{
                 ...state, status: action.status
@@ -53,7 +53,7 @@ const profileReducer = (state = initialState, action: ActionsTypes):initialState
                 ...state, profile: {...state.profile, photos: action.photos} as profileType
             }
         default:
-            return state;
+            return state
 
     }
 }
@@ -93,7 +93,7 @@ export const getProfileThunkCreator = (userId:number):ThunkType => async (dispat
      let data = await profileAPI.getProfile(userId)
                  dispatch(setUserProfile(data));
     }
-    };
+    }
 
 export const getStatusThunkCreator = (userId:number):ThunkType => async (dispatch) => {
     if (userId) {
@@ -105,14 +105,14 @@ export const getStatusThunkCreator = (userId:number):ThunkType => async (dispatc
 
 export const updateStatusThunkCreator = (status:string): ThunkType => async (dispatch) => {
      let data = await  profileAPI.updateStatus(status)
-                if (data.resultCode === 0) {
+                if (data.resultCode === ResultCodeEnum.success) {
                     dispatch(getStatus(status))
                 }
 }
 
 export const savePhoto = (photo:object): ThunkAction<Promise<void>, AppStateType, unknown, ActionsTypes | setProfileAvatarActionType> => async (dispatch) => {
     let data = await profileAPI.savePhoto(photo)
-    if (data.resultCode === 0) {
+    if (data.resultCode === ResultCodeEnum.success) {
        dispatch(setPhoto(data.data.photos))
         dispatch(setProfileAvatar(data.data.photos.small))
     }
@@ -122,7 +122,7 @@ export const savePhoto = (photo:object): ThunkAction<Promise<void>, AppStateType
 export const saveProfile = (formData:profileType): ThunkType => async (dispatch, getState:any) => {
     const userId = getState().auth.id
     let data = await profileAPI.saveProfile(formData)
-    if (data.resultCode === 0) {
+    if (data.resultCode === ResultCodeEnum.success) {
         dispatch(getProfileThunkCreator(userId))
     } else {
 
@@ -132,4 +132,4 @@ export const saveProfile = (formData:profileType): ThunkType => async (dispatch,
     }
 }
 
-export default profileReducer;
+export default profileReducer

@@ -1,5 +1,5 @@
-import axios from "axios";
-import { profileType } from "../Redux/types/types";
+import axios from "axios"
+import {profileType, userType} from "../Redux/types/types"
 
 const instance = axios.create({
   withCredentials: true,
@@ -7,37 +7,43 @@ const instance = axios.create({
   headers: {
     "API-KEY": "a7708531-0e49-48f3-ad2c-d33a80bebb3f",
   },
-});
+})
+
+type UsersAPIType = {
+  items: Array<userType>
+  totalCount: number
+  error: string|null
+}
 
 export const usersAPI = {
   getUsers(currentPage: number, pageSize: number) {
     return instance
-      .get(`users?page=${currentPage}&count=${pageSize}`)
-      .then((response) => response.data);
+      .get<UsersAPIType>(`users?page=${currentPage}&count=${pageSize}`)
+      .then((response) => response.data)
   },
 
   follow(id: number) {
-    return instance.post(`follow/${id}`, {}).then((response) => response.data);
+    return instance.post(`follow/${id}`, {}).then((response) => response.data)
   },
 
   unfollow(id: number) {
-    return instance.delete(`follow/${id}`).then((response) => response.data);
+    return instance.delete(`follow/${id}`).then((response) => response.data)
   },
-};
+}
 
 export const profileAPI = {
   getProfile(id: number) {
-    return instance.get(`profile/${id}`).then((response) => response.data);
+    return instance.get<profileType>(`profile/${id}`).then((response) => response.data)
   },
   getStatus(id: number) {
     return instance
-      .get(`profile/status/${id}`)
-      .then((response) => response.data);
+      .get<string>(`profile/status/${id}`)
+      .then((response) => response.data)
   },
   updateStatus(status: string) {
     return instance
       .put(`profile/status`, { status: status })
-      .then((response) => response.data);
+      .then((response) => response.data)
   },
   savePhoto(photo: any) {
     const formData = new FormData();
@@ -48,32 +54,36 @@ export const profileAPI = {
           "Content-type": "multipart/form-data",
         },
       })
-      .then((response) => response.data);
+      .then((response) => response.data)
   },
   saveProfile(formData: profileType) {
-    return instance.put(`profile`, formData).then((response) => response.data);
+    return instance.put(`profile`, formData).then((response) => response.data)
   },
-};
+}
 
 export enum ResultCodeEnum {
   success = 0,
   error = 1,
-  captchaIsRequired = 10
+}
+export enum ResultCodeForCaptcha {
+  captchaIsRequired = 10,
 }
 type AuthMeType = {
-  data: { id: number, email: string, login: string }
+  data: { id: number; email: string; login: string }
   resultCode: ResultCodeEnum
   messages: Array<string>
-};
+}
 
 export const authAPI = {
   auth() {
     return instance
       .get<AuthMeType>(`auth/me`)
-      .then((response) => response.data);
+      .then((response) => response.data)
   },
   setAuthProfile(id: number) {
-    return instance.get(`profile/${id}`).then((response) => response.data);
+    return instance
+      .get<profileType>(`profile/${id}`)
+      .then((response) => response.data)
   },
   login(
     email: string,
@@ -86,14 +96,16 @@ export const authAPI = {
       .then((response) => response.data);
   },
   logout() {
-    return instance.delete(`auth/login`).then((response) => response.data);
+    return instance.delete(`auth/login`).then((response) => response.data)
   },
-};
-
+}
+type GetCaptchaUrlType = {
+  url: string
+}
 export const securityAPI = {
   getCaptchaUrl() {
     return instance
-      .get(`security/get-captcha-url`)
-      .then((response) => response.data);
+      .get<GetCaptchaUrlType>(`security/get-captcha-url`)
+      .then((response) => response.data)
   },
-};
+}
