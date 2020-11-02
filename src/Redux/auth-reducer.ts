@@ -94,15 +94,15 @@ export const setProfileAvatar = (
 });
 
 type loginIsTrueActionType = {
-  type: typeof LOGIN_IS_TRUE;
-};
+  type: typeof LOGIN_IS_TRUE
+}
 
 export const loginIsTrue = (): loginIsTrueActionType => ({
   type: LOGIN_IS_TRUE,
-});
+})
 
 type setCaptchaUrlActionType = {
-  type: typeof SET_CAPTCHA_URL;
+  type: typeof SET_CAPTCHA_URL
   payload: setCaptchaUrlActionTypePayloadType
 };
 type setCaptchaUrlActionTypePayloadType = {
