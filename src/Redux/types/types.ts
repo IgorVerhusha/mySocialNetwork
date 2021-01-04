@@ -5,7 +5,7 @@ export type profileType = {
     fullName: string
     contacts: contactsType
     photos:photosType
-
+aboutMe: string
 }
 export type contactsType = {
     github: string | null
@@ -34,3 +34,9 @@ export type setProfileAvatarActionType = {
     type: any;
     profileAvatarPath: string;
 };
+
+export type postsType = {
+    post: string
+    id: number
+    likesCount: number
+}

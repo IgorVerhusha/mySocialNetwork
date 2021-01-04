@@ -1,7 +1,13 @@
 import React from 'react';
 import classes from './Post.module.css';
+import {postsType} from "../../../../Redux/types/types";
 
-const Post = (props) => {
+type PropsType = {
+    postText: string
+    likes: number
+}
+
+const Post: React.FC<PropsType> = (props) => {
     return <div className={classes.item}>
         {props.postText}
         <div className={classes.like}>

@@ -6,32 +6,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 107&#10;added typescript to api">
+      <change afterPath="$PROJECT_DIR$/src/api/auth-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/profile-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/security-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/users-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/main_image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/2.d9ad5f5c.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/2.d9ad5f5c.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.623ca59a.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.623ca59a.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.22072f81.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.22072f81.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.22072f81.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/3.92f31d83.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/3.92f31d83.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.70e9b927.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.70e9b927.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/app-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/dialogs-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/dialogs-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/types/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/users-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/SendMessageForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/SendMessageForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/NewPostForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/NewPostForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/Post/Post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/validators/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validators/validators.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,25 +83,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../FreshLimeSoft/odk-front/odk-front" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\education\web\React_samurai\01-first-project\react-first-project\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="ts.external.directory.path" value="D:\education\web\React_samurai\01-first-project\react-first-project\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\common\FormsControls" />
-      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\common\Preloader" />
-      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Dialogs" />
-      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Users" />
-      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Settings" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Profile\ProfileInfo" />
       <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Users" />
@@ -96,21 +111,21 @@
       <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\Redux" />
       <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\common\FormsControls" />
     </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\api\security-api.ts" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\api\auth-api.ts" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\api\profile-api.ts" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\api\users-api.ts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\common\FormsControls" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\common\Preloader" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Dialogs" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Users" />
+      <recent name="D:\education\web\React_samurai\01-first-project\react-first-project\src\components\Settings" />
+    </key>
   </component>
-  <component name="RunManager" selected="Jest.ProfileStatus component.span should be displayed input">
-    <configuration name="ProfileStatus component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
-      <test-names>
-        <test-name value="ProfileStatus component" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.start">
     <configuration name="ProfileStatus component.span should be displayed input" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -149,23 +164,40 @@
       <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
       <method v="2" />
     </configuration>
-    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="new post should be added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Redux/profile-reducer.test.js" />
+      <test-names>
+        <test-name value="new post should be added" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="deploy" />
-      </scripts>
+      <command value="start" />
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Jest.new post should be added" />
+      <item itemvalue="Jest.ProfileStatus.test.js" />
+      <item itemvalue="Jest.ProfileStatus component.span should be displayed input" />
+      <item itemvalue="Jest.ProfileStatus component.span should contains correct status" />
+      <item itemvalue="npm.start" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="Jest.new post should be added" />
         <item itemvalue="Jest.ProfileStatus.test.js" />
         <item itemvalue="Jest.ProfileStatus component.span should contains correct status" />
         <item itemvalue="Jest.ProfileStatus component.span should be displayed input" />
-        <item itemvalue="Jest.ProfileStatus component" />
       </list>
     </recent_temporary>
   </component>
@@ -333,7 +365,32 @@
       <workItem from="1603990175984" duration="4288000" />
       <workItem from="1604172396680" duration="671000" />
       <workItem from="1604237339864" duration="9388000" />
-      <workItem from="1604303090921" duration="2915000" />
+      <workItem from="1604303090921" duration="18155000" />
+      <workItem from="1604327734924" duration="24000" />
+      <workItem from="1604479216852" duration="1447000" />
+      <workItem from="1604482357610" duration="4105000" />
+      <workItem from="1604510065796" duration="1463000" />
+      <workItem from="1604653541116" duration="2362000" />
+      <workItem from="1604828844601" duration="12877000" />
+      <workItem from="1604902506381" duration="265000" />
+      <workItem from="1604922655841" duration="1245000" />
+      <workItem from="1605003929309" duration="991000" />
+      <workItem from="1605028364456" duration="6557000" />
+      <workItem from="1605165956118" duration="2765000" />
+      <workItem from="1606232231861" duration="5050000" />
+      <workItem from="1606285454090" duration="183000" />
+      <workItem from="1606414255433" duration="8320000" />
+      <workItem from="1606424324929" duration="1776000" />
+      <workItem from="1606730126128" duration="645000" />
+      <workItem from="1606844006683" duration="7010000" />
+      <workItem from="1606890686768" duration="63000" />
+      <workItem from="1606939987618" duration="4278000" />
+      <workItem from="1606981757761" duration="21000" />
+      <workItem from="1607524880601" duration="3892000" />
+      <workItem from="1607538089684" duration="52000" />
+      <workItem from="1609055920629" duration="17030000" />
+      <workItem from="1609136730131" duration="83000" />
+      <workItem from="1609751902536" duration="3681000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 53">
       <created>1593707361807</created>
@@ -475,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604258508695</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="lesson 107&#10;added typescript to api">
+      <created>1604306187594</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1604306187594</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,120 +580,6 @@
     <MESSAGE value="lesson 106&#10;added typescript to redux-thunks" />
     <MESSAGE value="lesson 107&#10;added typescript to api" />
     <option name="LAST_COMMIT_MESSAGE" value="lesson 107&#10;added typescript to api" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="447" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595879066267">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="447" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1595879066267" />
-    <state x="536" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596376793559">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="536" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1596376793559" />
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595954401348">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1595954401348" />
-    <state x="551" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596532967387">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="551" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596532967387" />
-    <state width="864" height="618" key="DebuggerActiveHint" timestamp="1602013081820">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="864" height="618" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1602013081820" />
-    <state x="472" y="241" key="FileChooserDialogImpl" timestamp="1603383499869">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="472" y="241" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603383499869" />
-    <state width="1515" height="242" key="GridCell.Tab.0.bottom" timestamp="1603398266080">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="242" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603398266080" />
-    <state width="1515" height="242" key="GridCell.Tab.0.center" timestamp="1603398266079">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="242" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603398266079" />
-    <state width="1515" height="242" key="GridCell.Tab.0.left" timestamp="1603398266079">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="242" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603398266079" />
-    <state width="1515" height="242" key="GridCell.Tab.0.right" timestamp="1603398266079">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="242" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603398266079" />
-    <state width="1515" height="253" key="GridCell.Tab.1.bottom" timestamp="1602015426067">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602015426067" />
-    <state width="1515" height="253" key="GridCell.Tab.1.center" timestamp="1602015426067">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602015426067" />
-    <state width="1515" height="253" key="GridCell.Tab.1.left" timestamp="1602015426067">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602015426067" />
-    <state width="1515" height="253" key="GridCell.Tab.1.right" timestamp="1602015426067">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602015426067" />
-    <state width="1515" height="253" key="GridCell.Tab.2.bottom" timestamp="1602015426067">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602015426067" />
-    <state width="1515" height="253" key="GridCell.Tab.2.center" timestamp="1602015426067">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1602015426067" />
-    <state width="1515" height="253" key="GridCell.Tab.2.left" timestamp="1602015426067">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1602015426067" />
-    <state width="1515" height="253" key="GridCell.Tab.2.right" timestamp="1602015426067">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1602015426067" />
-    <state width="1515" height="253" key="GridCell.Tab.3.bottom" timestamp="1602015426068">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602015426068" />
-    <state width="1515" height="253" key="GridCell.Tab.3.center" timestamp="1602015426068">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1602015426068" />
-    <state width="1515" height="253" key="GridCell.Tab.3.left" timestamp="1602015426068">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1602015426068" />
-    <state width="1515" height="253" key="GridCell.Tab.3.right" timestamp="1602015426068">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="253" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1602015426068" />
-    <state x="349" y="147" key="IDE.errors.dialog" timestamp="1596373532820">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1596373532820" />
-    <state x="201" y="115" key="SettingsEditor" timestamp="1604305515457">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="201" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604305515457" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1602697939949">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1602697939949" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1604303855523">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604303855523" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1603532954300">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603532954300" />
-    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604247698878">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="483" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604247698878" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

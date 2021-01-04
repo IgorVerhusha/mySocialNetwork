@@ -1,12 +1,21 @@
 import React from "react";
 import classes from "./MyPosts.module.css";
 import Post from "./Post/Post";
-import NewPostForm from "./NewPostForm";
+import NewPostForm, { AddPostFormValuesType } from "./NewPostForm";
+import {postsType} from "../../../Redux/types/types";
+
+
+type PropsType={
+    posts: Array<postsType>
+    addPost: (newPostBody: string) => void
+}
+
 
 // отрисовываем полученные посты
-const MyPosts= React.memo (props => {
-    console.log("render");
-    let addNewPost = (values) => {
+const MyPosts: React.FC<PropsType> = (props) => {
+
+    let addNewPost = (values: AddPostFormValuesType) => {
+
         props.addPost(values.newPostBody);
     };
 
@@ -23,6 +32,6 @@ const MyPosts= React.memo (props => {
             {postElements}
         </div>
     );
-});
+};
 
 export default MyPosts;

@@ -3,8 +3,7 @@ import { connect } from "react-redux"
 import {
   followThunkCreator,
   getUsersThunkCreator,
-  setCurrentPage,
-  setPaginatorPage,
+ actions,
   unfollowThunkCreator,
 } from "../../Redux/users-reducer"
 import Users from "./Users"
@@ -90,8 +89,8 @@ let mapStateToProps = (state: AppStateType):MapStateToPropsType => {
 
 export default compose(
   connect<MapStateToPropsType, MapDispatchToPropsType, OwnStateProps, AppStateType>(mapStateToProps, {
-    setCurrentPage,
-    setPaginatorPage,
+   setCurrentPage: actions.setCurrentPage,
+   setPaginatorPage: actions.setPaginatorPage,
     getUsers: getUsersThunkCreator,
     followThunk: followThunkCreator,
     unfollowThunk: unfollowThunkCreator,

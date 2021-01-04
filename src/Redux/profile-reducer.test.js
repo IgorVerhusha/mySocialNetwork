@@ -1,9 +1,9 @@
-import profileReducer, {addPost} from "./profile-reducer";
+import profileReducer, {actions} from "./profile-reducer";
 import React from "react";
 
 
 it('new post should be added', () => {
-    let action = addPost("dasdsadasd");
+    let action = actions.addPost("dasdsadasd");
     let state = {
         posts: [
             {id: 1, post: 'hello', likesCount: 10},

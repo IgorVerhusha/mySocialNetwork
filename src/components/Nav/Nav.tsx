@@ -4,7 +4,7 @@ import {  NavLink } from "react-router-dom";
 
 
 // панель с навигацией
-const Nav = () => {
+const Nav: React.FC = () => {
   return (
     <nav className={classes.nav}>
       <div className={classes.item}>

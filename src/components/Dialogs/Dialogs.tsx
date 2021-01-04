@@ -3,14 +3,21 @@ import classes from "./Dialogs.module.css";
 import Dialog from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import AddMessageReduxForm from "./SendMessageForm";
+import {ActionsType, initialStateType} from "../../Redux/dialogs-reducer";
+
+type OwnPropsType = {
+    messagesPage: initialStateType
+    sendMessage: (messageText:string)=> void
+}
+
+export type NewMessageFormType = {
+    newMessageBody: string
+}
+
+const Dialogs: React.FC<OwnPropsType> = (props) => {
 
 
-
-
-const Dialogs = (props) => {
-
-
-  let addNewMessage = (values) => {
+  let addNewMessage = (values: NewMessageFormType) => {
       if (values.newMessageBody !== undefined) {
           props.sendMessage(values.newMessageBody)
       }

@@ -5,11 +5,21 @@ import {
   minLengthCreator,
   required,
 } from "../../../utils/validators/validators";
-import { Field, reduxForm } from "redux-form";
+import {Field, InjectedFormProps, reduxForm} from "redux-form";
+import {profileType} from "../../../Redux/types/types";
+import { ProfileDataPropsType } from "./ProfileInfo";
+
 
 const minLength3 = minLengthCreator(3);
 
-const ProfileDataForm = ({ profile, handleSubmit, error }) => {
+type PropsType = {
+  profile: profileType
+}
+
+
+const ProfileDataForm: React.FC<
+    InjectedFormProps<profileType,PropsType> & PropsType
+    > = ({ profile, handleSubmit, error }) => {
   return (
     <form onSubmit={handleSubmit}>
       <div className={classes.profileData}>
@@ -60,12 +70,18 @@ const ProfileDataForm = ({ profile, handleSubmit, error }) => {
 };
 
 
-export const ProfileReduxForm = reduxForm({
+export const ProfileReduxForm = reduxForm<
+    profileType, PropsType
+    >({
   form: "profileData",
 })(ProfileDataForm);
 
 
-const ContactField = ({ contactTitle}) => {
+type ContactFieldPropsType = {
+  contactTitle: string | null
+}
+
+const ContactField: React.FC<ContactFieldPropsType> = ({ contactTitle}) => {
   return (
       <div className={classes.contact}>
         <b>{contactTitle}:</b>

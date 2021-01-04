@@ -3,7 +3,19 @@ import classes from './Header.module.css';
 import {NavLink} from "react-router-dom";
 import Preloader from "../common/Preloader/Preloader";
 
-const Header = (props) => {
+export type MapPropsType = {
+    isAuth:boolean
+    login:string | null
+    profileAvatar: boolean
+    profileAvatarPath: string | null
+}
+
+export type DispatchToPropsType = {
+    logoutThunkCreator: ()=>void
+    authThunk: ()=>void
+}
+
+const Header:React.FC<MapPropsType & DispatchToPropsType> = (props) => {
     return <header className={classes.header}>
 <div className={classes.logo}>
             <a href="/profile"><h1><img src={"/images/logo.png"}/> MySocialNetwork</h1></a>

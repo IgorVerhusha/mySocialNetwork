@@ -13,11 +13,17 @@ import { connect, Provider } from "react-redux";
 import { compose } from "redux";
 import { initializeApp } from "./Redux/app-reducer";
 import Preloader from "./components/common/Preloader/Preloader";
-import store from "./Redux/redux-store";
+import store, {AppStateType} from "./Redux/redux-store";
 const Music = React.lazy(() => import("./components/Music/Music"));
 
-class App extends React.Component {
-  catchAllUnhandledErrors  ()  {
+type MapPropsType = ReturnType<typeof mapStateToProps>
+type DispatchPropsType = {
+  initializeApp: () => void
+}
+
+
+class App extends React.Component <MapPropsType & DispatchPropsType> {
+  catchAllUnhandledErrors  (e: PromiseRejectionEvent)  {
     alert("Some error occured")
   }
   componentDidMount() {
@@ -59,11 +65,13 @@ componentWillMount() {
   }
 }
 
-const mapStateToProps = (state) => ({
+
+
+const mapStateToProps = (state: AppStateType) => ({
   initialized: state.app.initialized,
 });
 
-let AppContainer = compose(
+let AppContainer = compose<React.ComponentType>(
   withRouter,
   connect(mapStateToProps, { initializeApp })
 )(App);

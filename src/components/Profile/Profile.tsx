@@ -3,9 +3,19 @@ import classes from "./Profile.module.css";
 
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPostsContainer from "./MyPosts/MyPostsContainer";
+import {profileType} from "../../Redux/types/types";
 
 // отрисовываем страницу профиля
-const Profile = (props) => {
+type PropsType = {
+    profile: profileType | null;
+    status: string;
+    isOwner: boolean;
+    savePhoto: (file: File) => void;
+    saveProfile: (profile: profileType) =>  Promise<any>;
+    updateStatus: (status: string) => void;
+}
+
+const Profile:React.FC<PropsType> = (props) => {
   return (
     <div className={classes.content}>
       <ProfileInfo
