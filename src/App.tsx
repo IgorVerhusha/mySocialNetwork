@@ -3,18 +3,36 @@ import "./App.scss";
 import Nav from "./components/Nav/Nav";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
-import { withRouter, BrowserRouter, Route } from "react-router-dom";
+import { withRouter, BrowserRouter, Route, NavLink } from 'react-router-dom'
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
-import UsersContainer from "./components/Users/UsersContainer";
+import Users from "./components/Users/Users";
 import LoginPage from "./components/Login/Login";
 import ProfileContainer from "./components/Profile/ProfileContainer";
-import HeaderContainer from "./components/Header/HeaderContainer";
+import HeaderProfile from "./components/Header/Header";
 import { connect, Provider } from "react-redux";
 import { compose } from "redux";
 import { initializeApp } from "./Redux/app-reducer";
 import Preloader from "./components/common/Preloader/Preloader";
 import store, {AppStateType} from "./Redux/redux-store";
+import 'antd/dist/antd.css';
+import './index.css';
+import { Col, Layout, Menu, Row } from 'antd'
+import {
+  MenuUnfoldOutlined,
+  MenuFoldOutlined,
+  UserOutlined,
+  MessageOutlined,
+TeamOutlined,
+} from '@ant-design/icons';
+import classes from './components/Nav/Nav.module.css'
+import { ChatPage } from "./pages/ChatPage";
+
+const { Header, Sider, Content } = Layout;
+
+
 const Music = React.lazy(() => import("./components/Music/Music"));
+
+
 
 type MapPropsType = ReturnType<typeof mapStateToProps>
 type DispatchPropsType = {
@@ -23,6 +41,17 @@ type DispatchPropsType = {
 
 
 class App extends React.Component <MapPropsType & DispatchPropsType> {
+
+  state = {
+    collapsed: false,
+  };
+
+  toggle = () => {
+    this.setState({
+      collapsed: !this.state.collapsed,
+    });
+  };
+
   catchAllUnhandledErrors  (e: PromiseRejectionEvent)  {
     alert("Some error occured")
   }
@@ -40,26 +69,67 @@ componentWillMount() {
     }
     return (
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <div className={"app-wrapper"}>
-          <HeaderContainer />
-          <Nav />
-          <div className={"app-wrapper-content"}>
-            <Route exact path="/" render={() => <ProfileContainer />} />
-            <Route
-              exact
-              path="/profile/:userId?"
-              render={() => <ProfileContainer />}
-            />
-            <Route path="/dialogs" render={() => <DialogsContainer />} />
-            <Route path="/news" component={News} />
-            <Suspense fallback={<Preloader />}>
-              <Route path="/music" component={Music} />
-            </Suspense>
-            <Route path="/users" render={() => <UsersContainer />} />
-            <Route path="/settings" component={Settings} />
-            <Route path="/login" render={() => <LoginPage />} />
-          </div>
-        </div>
+        <Layout>
+          <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
+            <div className="logo" />
+            <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+              <Menu.Item key="1" icon={<UserOutlined />} >
+                <NavLink to={"/profile/"}>
+                  Profile
+                </NavLink>
+              </Menu.Item>
+              <Menu.Item key="2" icon={<MessageOutlined />}>
+                <NavLink to="/chat">
+                  Chat
+                </NavLink>
+              </Menu.Item>
+              <Menu.Item key="3" icon={<TeamOutlined />}>
+                <NavLink to="/users">
+                  Users
+                </NavLink>
+              </Menu.Item>
+            </Menu>
+          </Sider>
+          <Layout className="site-layout">
+            <Header className="site-layout-background" style={{ padding: 0 }}>
+              <Row>
+                <Col span={21}>
+                  {React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+                    className: 'trigger',
+                    onClick: this.toggle,
+                  })}
+                </Col>
+                <Col span={3}>
+                  <HeaderProfile/>
+                </Col>
+              </Row>
+            </Header>
+            <Content
+              className="site-layout-background"
+              style={{
+                margin: '24px 16px',
+                padding: 24,
+                minHeight: 280,
+              }}
+            >
+              <Route exact path="/" render={() => <ProfileContainer />} />
+              <Route
+                exact
+                path="/profile/:userId?"
+                render={() => <ProfileContainer />}
+              />
+              <Route path="/chat" render={() => <ChatPage />} />
+              <Route path="/news" component={News} />
+              <Suspense fallback={<Preloader />}>
+                <Route path="/music" component={Music} />
+              </Suspense>
+              <Route path="/users" render={() => <Users />} />
+              <Route path="/settings" component={Settings} />
+              <Route path="/login" render={() => <LoginPage />} />
+            </Content>
+          </Layout>
+        </Layout>
+
       </BrowserRouter>
     );
   }

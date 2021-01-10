@@ -4,7 +4,7 @@ import { Field, InjectedFormProps, reduxForm } from "redux-form";
 import { Input } from "../common/FormsControls/FormsControls";
 import { minLengthCreator, required } from "../../utils/validators/validators";
 import { loginThunkCreator } from "../../Redux/auth-reducer";
-import { connect } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 import { AppStateType } from "../../Redux/redux-store";
 
@@ -53,20 +53,6 @@ const LoginForm: React.FC<
   );
 };
 
-type MapStateToPropsType = {
-  isAuth: boolean;
-  captchaUrl: string | null;
-};
-
-type MapDispatchToPropsType = {
-  loginThunkCreator: (
-    email: string,
-    password: string,
-    rememberMe: boolean,
-    captchaUrl: string | null
-  ) => void;
-};
-
 type LoginFormsValuesType = {
   email: string;
   password: string;
@@ -74,22 +60,25 @@ type LoginFormsValuesType = {
   captchaUrl: string | null;
 };
 
-const Login: React.FC<MapStateToPropsType & MapDispatchToPropsType> = (
-  props
-) => {
+const Login: React.FC = () => {
+  const captchaUrl = useSelector(
+    (state: AppStateType) => state.auth.captchaUrl
+  );
+  const isAuth = useSelector((state: AppStateType) => state.auth.isAuth);
+  const dispatch = useDispatch();
   const onSubmit = (formData: LoginFormsValuesType) => {
-    let { email, password, rememberMe, captchaUrl } = formData;
-    props.loginThunkCreator(email, password, rememberMe, captchaUrl);
+    let { email, password, rememberMe } = formData;
+    dispatch(loginThunkCreator(email, password, rememberMe, captchaUrl));
   };
 
-  if (props.isAuth) {
+  if (isAuth) {
     return <Redirect to={"profile"} />;
   }
 
   return (
     <div className={classes.loginForm}>
       <h1>Login</h1>
-      <LoginReduxForm onSubmit={onSubmit} captchaUrl={props.captchaUrl} />
+      <LoginReduxForm onSubmit={onSubmit} captchaUrl={captchaUrl} />
     </div>
   );
 };
@@ -98,9 +87,4 @@ const LoginReduxForm = reduxForm<LoginFormsValuesType, LoginFormOwnProps>({
   form: "login",
 })(LoginForm);
 
-const mapStateToProps = (state: AppStateType): MapStateToPropsType => ({
-  isAuth: state.auth.isAuth,
-  captchaUrl: state.auth.captchaUrl,
-});
-
-export default connect(mapStateToProps, { loginThunkCreator })(Login);
+export default Login;

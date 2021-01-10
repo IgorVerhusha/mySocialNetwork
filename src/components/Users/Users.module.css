@@ -1,11 +1,10 @@
 .card {
-  color: #f0e8e8;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-areas: "p" "d";
   border: #f0e8e8 1px solid;
   margin: 2% 30% 0% 5%;
-  background-color: #4a3f3f;
+  background-color: powderblue;
   width: 600px;
 }
 .card .picture {
@@ -26,9 +25,6 @@
   padding-top: 4%;
 }
 
-.pagesCount {
-  color: #f0e8e8;
-}
 .pagesCount .selectedPage {
   font-weight: bold;
 }

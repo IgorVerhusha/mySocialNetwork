@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useState,  } from "react";
 import classes from "./ProfileInfo.module.scss";
 import Preloader from "../../common/Preloader/Preloader";
 import ProfileStatus from "./ProfileStatus";
@@ -44,13 +44,6 @@ const ProfileInfo: React.FC<PropsType> = ({
   } else {
     return (
       <div>
-        <div>
-          <img
-            src={
-              "https://igorverhusha.github.io/mySocialNetwork/images/main_image.png"
-            }
-          />
-        </div>
         <div className={classes.item}>
           <div>
             <img

@@ -2,6 +2,7 @@ import classes from "./Users.module.css";
 import {NavLink} from "react-router-dom";
 import React from "react";
 import {userType} from "../../Redux/types/types";
+import { useDispatch } from 'react-redux'
 
 
 type PropsType = {
@@ -12,6 +13,8 @@ type PropsType = {
 }
 
 const User: React.FC<PropsType> = ({user, followingInProgress, follow, unfollow}) => {
+
+
    return ( <div className={classes.card}>
         <div className={classes.picture}>
             <NavLink to={"/profile/" + user.id}>

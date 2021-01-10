@@ -1,29 +1,11 @@
 
-.header{
-    grid-area: h;
-    background: linear-gradient(to right,  #f0e8e8, #eddddd );
-    color: #352a2a;
-    font-size: 50px;
-    display: grid;
-    grid-template-columns: 8fr 1fr;
-
-}
-
-.logo {
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
 .loginContainer {
-display: flex;
+
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
-
-.loginContainer img{
-    width: 50px;
-}
-
-.logOutButton {
-    font-size: 10px;
+.logoutButton{
+    line-height: 24px;
+    cursor: pointer;
 }
