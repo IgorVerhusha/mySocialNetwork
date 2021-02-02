@@ -5,8 +5,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 118&#10;added websocket">
+    <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 118&#10;added websocket cleanups">
+      <change afterPath="$PROJECT_DIR$/src/Redux/chat-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/chat-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/ChatPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ChatPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +77,7 @@
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\education\web\React_samurai\01-first-project\react-first-project\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="ts.external.directory.path" value="D:\education\web\React_samurai\01-first-project\react-first-project\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -416,7 +420,9 @@
       <workItem from="1610312335017" duration="11000" />
       <workItem from="1610381844742" duration="715000" />
       <workItem from="1612168437209" duration="116000" />
-      <workItem from="1612168581898" duration="6127000" />
+      <workItem from="1612168581898" duration="6868000" />
+      <workItem from="1612268653868" duration="4203000" />
+      <workItem from="1612279112400" duration="6841000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 53">
       <created>1593707361807</created>
@@ -579,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610296816991</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="lesson 118&#10;added websocket cleanups">
+      <created>1612174854568</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1612174854568</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,7 +634,8 @@
     <MESSAGE value="lesson 107&#10;added typescript to api" />
     <MESSAGE value="lesson 111&#10;added typescript" />
     <MESSAGE value="lesson 118&#10;added websocket" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 118&#10;added websocket" />
+    <MESSAGE value="lesson 118&#10;added websocket cleanups" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 118&#10;added websocket cleanups" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
