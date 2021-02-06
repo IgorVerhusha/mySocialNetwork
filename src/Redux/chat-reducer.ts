@@ -3,8 +3,11 @@ import { BaseThunkType, InferActionsType } from "./redux-store";
 import { chatAPI, ChatMessageType } from "../api/chat-api";
 import { Dispatch } from "redux";
 
+
+type StatusType = 'pending' | 'ready'
 let initialState = {
   messages: [] as ChatMessageType[],
+  status: 'pending' as StatusType
 };
 
 const chatReducer = (
@@ -17,6 +20,11 @@ const chatReducer = (
         ...state,
         messages: [...state.messages, ...action.payload],
       };
+    case "SN/chat/STATUS_CHANGED":
+      return {
+        ...state,
+        status: action.payload
+      };
     default:
       return state;
   }
@@ -28,6 +36,11 @@ export const actions = {
       type: "SN/chat/MESSAGES_RECEIVED",
       payload: messages,
     } as const),
+  statusChanged: (payload: StatusType) =>
+      ({
+        type: "SN/chat/STATUS_CHANGED",
+        payload: payload,
+      } as const),
 };
 
 let _newMessageHandler: ((messages: ChatMessageType[]) => void) | null = null;
