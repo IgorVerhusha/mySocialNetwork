@@ -17,6 +17,7 @@ export type ChatMessageType = {
 
 export const ChatPage: React.FC = () => {
     const dispatch = useDispatch()
+    const status = useSelector((state: AppStateType) => state.chat.status)
     useEffect(() => {
         dispatch(startMessagesListening())
         return () => {
@@ -26,8 +27,11 @@ export const ChatPage: React.FC = () => {
 
     return (
         <div>
-            <Messages/>
-            <AddMessageForm/>
+            {status === 'error' ? <div>Some error occurred. Please refresh the page</div> :
+            <>
+                <Messages/>
+                <AddMessageForm/>
+            </>}
         </div>
     )
 }

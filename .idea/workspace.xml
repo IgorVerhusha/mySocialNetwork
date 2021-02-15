@@ -5,9 +5,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 118&#10;added websocket cleanups">
+    <list default="true" id="28098643-ad24-4840-bdaf-aa7ef77b3378" name="Default Changelist" comment="lesson 118&#10;added status ws on redux">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/chat-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/chat-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/chat-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/chat-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/ChatPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ChatPage.tsx" afterDir="false" />
@@ -60,7 +59,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../FreshLimeSoft/odk-front/odk-front" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
@@ -423,7 +422,10 @@
       <workItem from="1612268653868" duration="4203000" />
       <workItem from="1612279112400" duration="7453000" />
       <workItem from="1612333736593" duration="197000" />
-      <workItem from="1612614563646" duration="3652000" />
+      <workItem from="1612614563646" duration="4232000" />
+      <workItem from="1612766656581" duration="20000" />
+      <workItem from="1613301082512" duration="322000" />
+      <workItem from="1613373748664" duration="8830000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 53">
       <created>1593707361807</created>
@@ -600,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612287414959</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="lesson 118&#10;added status ws on redux">
+      <created>1612618513559</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1612618513559</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +652,8 @@
     <MESSAGE value="lesson 111&#10;added typescript" />
     <MESSAGE value="lesson 118&#10;added websocket" />
     <MESSAGE value="lesson 118&#10;added websocket cleanups" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 118&#10;added websocket cleanups" />
+    <MESSAGE value="lesson 118&#10;added status ws on redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 118&#10;added status ws on redux" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
